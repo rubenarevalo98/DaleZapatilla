@@ -1,0 +1,3020 @@
+/***************************************************************************/
+/* MARCO FIORE // MFDESIGN.IT **********************************************/
+/***************************************************************************/
+
+@font-face {
+	font-family: FontAwesome;
+	src: url('font/FontAwesome.eot?v=4.7');
+	src: url('font/FontAwesome.eot?#iefix&v=4.7') format('embedded-opentype'),
+	     url('font/FontAwesome.woff2?v=4.7') format('woff2'),
+	     url('font/FontAwesome.woff?v=4.7') format('woff'),
+	     url('font/FontAwesome.ttf?v=4.7') format('truetype'),
+	     url('font/FontAwesome.svg?v=4.7#FontAwesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: AntiqueOlive;
+	src: url('font/AntiqueOlive.eot');
+	src: url('font/AntiqueOlive.eot?#iefix') format('embedded-opentype'),
+	     url('font/AntiqueOlive.woff2') format('woff2'),
+	     url('font/AntiqueOlive.woff') format('woff'),
+	     url('font/AntiqueOlive.ttf') format('truetype'),
+	     url('font/AntiqueOlive.svg#Antique Olive Nord Italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: GothamBlack;
+	src: url('font/GothamBlack.eot');
+	src: url('font/GothamBlack.eot?#iefix') format('embedded-opentype'),
+	     url('font/GothamBlack.woff2') format('woff2'),
+	     url('font/GothamBlack.woff') format('woff'),
+	     url('font/GothamBlack.ttf') format('truetype'),
+	     url('font/GothamBlack.svg#Gotham Black') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: UbuntuCondensed;
+	src: url('font/UbuntuCondensed.eot');
+	src: url('font/UbuntuCondensed.eot?#iefix') format('embedded-opentype'),
+	     url('font/UbuntuCondensed.woff2') format('woff2'),
+	     url('font/UbuntuCondensed.woff') format('woff'),
+	     url('font/UbuntuCondensed.ttf') format('truetype'),
+	     url('font/UbuntuCondensed.svg#Ubuntu Condensed') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: UbuntuLight;
+	src: url('font/UbuntuLight.eot');
+	src: url('font/UbuntuLight.eot?#iefix') format('embedded-opentype'),
+	     url('font/UbuntuLight.woff2') format('woff2'),
+	     url('font/UbuntuLight.woff') format('woff'),
+	     url('font/UbuntuLight.ttf') format('truetype'),
+	     url('font/UbuntuLight.svg#Ubuntu Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/***************************************************************************/
+/* ANIMATIONS **************************************************************/
+
+@-webkit-keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/**/
+
+@-webkit-keyframes spin-reverse {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+@-moz-keyframes spin-reverse {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+@-o-keyframes spin-reverse {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes spin-reverse {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+/***************************************************************************/
+/* BOUNCE ******************************************************************/
+
+@-webkit-keyframes vibration {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+	40% {
+		transform: translate(-5px, 0) rotate(0deg);
+	}
+	60% {
+		transform: translate(-3px, 0) rotate(0deg);
+	}
+}
+@keyframes vibration {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+	40% {
+		transform: translate(-5px, 0) rotate(0deg);
+	}
+	60% {
+		transform: translate(-3px, 0) rotate(0deg);
+	}
+}
+
+/***************************************************************************/
+/* FONT AWESOME ************************************************************/
+
+.fa-address-card:before			{	content: '\f2bb';	}
+.fa-angle-down:before			{	content: '\f107';	}
+.fa-angle-up:before				{	content: '\f106';	}
+.fa-amazon:before				{	content: '\f270';	}
+.fa-ban:before					{	content: '\f05e';	}
+.fa-bar-chart:before			{	content: '\f080';	}
+.fa-bars:before					{	content: '\f0c9';	}
+.fa-calendar:before				{	content: '\f073';	}
+.fa-camera:before				{	content: '\f030';	}
+.fa-car:before					{	content: '\f1b9';	}
+.fa-caret-right:before 			{	content: '\f0da';	}
+.fa-check:before				{	content: '\f00c';	}
+.fa-check-circle-o:before		{	content: '\f05d';	}
+.fa-check-square-o:before		{	content: '\f046';	}
+.fa-chevron-right:before		{	content: '\f054';	}
+.fa-cog:before					{	content: '\f013';	}
+.fa-cogs:before					{	content: '\f085';	}
+.fa-comments:before				{	content: '\f086';	}
+.fa-compress:before				{	content: '\f066';	}
+.fa-download:before				{	content: '\f019';	}
+.fa-expand:before				{	content: '\f065';	}
+.fa-external-link:before		{	content: '\f08e';	}
+.fa-eye:before					{	content: '\f06e';	}
+.fa-eye-slash:before			{	content: '\f070';	}
+.fa-facebook:before				{	content: '\f09a';	}
+.fa-files-o:before				{	content: '\f0c5';	}
+.fa-file-text-o:before			{	content: '\f0f6';	}
+.fa-floppy-o:before				{	content: '\f0c7';	}
+.fa-globe:before				{	content: '\f0ac';	}
+.fa-handshake-o:before			{	content: '\f2b5';	}
+.fa-home:before					{	content: '\f015';	}
+.fa-id-card-o:before			{	content: '\f2c3';	}
+.fa-instagram:before			{	content: '\f16d';	}
+.fa-line-chart:before			{	content: '\f201';	}
+.fa-minus-square-o:before		{	content: '\f147';	}
+.fa-money:before 				{	content: '\f0d6\a';	}
+.fa-newspaper-o:before			{	content: '\f1ea';	}
+.fa-paypal:before 				{	content: '\f1ed\a';	}
+.fa-pencil:before 				{	content: '\f040';	}
+.fa-pencil-square-o:before		{	content: '\f044';	}
+.fa-phone:before				{	content: '\f095';	}
+.fa-picture-o:before			{	content: '\f03e';	}
+.fa-plane:before				{	content: '\f072';	}
+.fa-plus:before					{	content: '\f067';	}
+.fa-plus-square-o:before		{	content: '\f196';	}
+.fa-refresh:before				{	content: '\f021';	}
+.fa-rss:before					{	content: '\f09e';	}
+.fa-search:before				{	content: '\f002';	}
+.fa-search-minus:before			{	content: '\f010';	}
+.fa-search-plus:before			{	content: '\f00e';	}
+.fa-sign-language:before		{	content: '\f2a7';	}
+.fa-sign-in:before				{	content: '\f090';	}
+.fa-sign-out:before				{	content: '\f08b';	}
+.fa-sitemap:before				{	content: '\f0e8';	}
+.fa-shield:before				{	content: '\f132';	}
+.fa-square-o:before				{	content: '\f096';	}
+.fa-stack-overflow:before		{	content: '\f16c';	}
+.fa-tachometer:before			{	content: '\f0e4';	}
+.fa-terminal:before				{	content: '\f120';	}
+.fa-times:before				{	content: '\f00d';	}
+.fa-trash:before				{	content: '\f1f8';	}
+.fa-trash-o:before				{	content: '\f014';	}
+.fa-trophy:before				{	content: '\f091';	}
+.fa-truck:before				{	content: '\f0d1';	}
+.fa-twitter:before				{	content: '\f099';	}
+.fa-shopping-cart:before		{	content: '\f07a';	}
+.fa-university:before 			{	content: '\f19c\a';	}
+.fa-user:before					{	content: '\f007';	}
+.fa-user-secret:before			{	content: '\f21b';	}
+.fa-user-plus:before			{	content: '\f234';	}
+.fa-users:before				{	content: '\f0c0';	}
+.fa-video-camera:before			{	content: '\f03d';	}
+.fa-wrench:before				{	content: '\f0ad';	}
+.fa-youtube:before				{	content: '\f167';	}
+.fa-youtube-play:before			{	content: '\f16a';	}
+.fa-twitch:before				{	content: '\f1e8';	}
+
+
+/***************************************************************************/
+/* GENERAL *****************************************************************/
+
+* {
+	margin: 0; padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;
+}
+html {
+	height: 100%;
+}
+
+body {
+	background: #161a1f;
+	font-family: UbuntuLight; color: #ebebeb;
+}
+body.bgPage {
+	background: #0e0f12 url('./background.jpg') no-repeat center fixed;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+			background-size: cover;
+	width: 100%; height: 100%;
+}
+
+a, a:hover, a:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
+.ico::before {
+	font-family: FontAwesome;
+}
+
+main {
+	width: 100%; height: auto;
+	float: left;
+}
+
+section {
+	height: auto;
+	margin: 0 auto;
+}
+section.page,
+section.pageFull {
+	width: 100%;
+	margin-top: 150px;
+	padding: 0 20px;
+}
+@media all and (max-width: 850px) {
+	section.page,
+	section.pageFull {
+		margin-top: 80px;
+	}
+}
+@media all and (max-width: 398px) {
+	section.page,
+	section.pageFull {
+		margin-top: 60px;
+	}
+}
+@media all and (min-width: 1150px) {
+	section.page {
+		width: 1100px;
+	}
+}
+
+@media only screen and (max-width: 1099px) {		/* MOBILE */
+	.mobileHidden {
+		display: none !important;
+	}
+}
+@media only screen and (min-width: 1100px) {		/* DESKTOP */
+	.desktopHidden {
+		display: none !important;
+	}
+}
+
+/***************************************************************************/
+/* LOADER ******************************************************************/
+
+#loader-wrapper {
+	background: rgba(22, 26, 31, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	overflow: hidden;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #16a085;
+    -webkit-animation: spin 1.7s linear infinite;
+    -moz-animation: spin 1.7s linear infinite;
+    -o-animation: spin 1.7s linear infinite;
+    animation: spin 1.7s linear infinite;
+    z-index: 11;
+}
+
+#loader:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #e74c3c;
+	-webkit-animation: spin-reverse .6s linear infinite;
+	   -moz-animation: spin-reverse .6s linear infinite;
+		 -o-animation: spin-reverse .6s linear infinite;
+			animation: spin-reverse .6s linear infinite;
+}
+#loader:after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #f9c922;
+	-webkit-animation: spin 1s linear infinite;
+	   -moz-animation: spin 1s linear infinite;
+		 -o-animation: spin 1s linear infinite;
+			animation: spin 1s linear infinite;
+}
+
+/***************************************************************************/
+/* HEADER ******************************************************************/
+
+header {
+	background: -moz-linear-gradient(top, rgba(13,15,18,1) 0%, rgba(22,26,31,0.8) 100%);
+	background: -webkit-linear-gradient(top, rgba(13,15,18,1) 0%,rgba(22,26,31,0.8) 100%);
+	background: linear-gradient(to bottom, rgba(13,15,18,1) 0%,rgba(22,26,31,0.8) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d0f12', endColorstr='#cc161a1f',GradientType=0 );
+	width: 100%; height: auto;
+    position: fixed;
+    top: 0; left: 0;
+	z-index: 100;
+}
+
+@media all and (max-width: 1099px) { /*850*/
+	header {
+		background: -moz-linear-gradient(top, rgba(13,15,18,1) 0%, rgba(22,26,31,0) 100%);
+		background: -webkit-linear-gradient(top, rgba(13,15,18,1) 0%,rgba(22,26,31,0) 100%);
+		background: linear-gradient(to bottom, rgba(13,15,18,1) 0%,rgba(22,26,31,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d0f12', endColorstr='#cc161a1f',GradientType=0 );
+		height: 70px;
+	}
+}
+header div#logo {
+	text-align: center;
+    width: 100%; height: auto;
+	margin: 10px 0;
+	float: left;
+}
+@media all and (max-width: 520px) {
+	header div#logo {
+		line-height: 40px;
+		padding-left: 55px;
+	}
+	header div#logo img {
+		max-width: 90%;
+	}
+}
+
+/************************************************************ MENU DESKTOP */
+
+@media all and (min-width: 1100px) { /*851*/
+	header nav ul {
+		text-align: center;
+		width: 100%; height: 45px;
+		margin: 0;
+		border-bottom: 2px solid #ffff00 ;
+		list-style: none;
+		float: left;
+	}
+	header nav ul li {
+		height: 45px;
+		padding: 0 15px;
+		position: relative;
+		display: inline-block;
+	}
+	header nav ul li:nth-child(-n+2) {
+		display: none;
+	}
+	header nav ul li a span {
+		font-family: UbuntuCondensed; font-style: normal; font-size: 1.3em; color: #fff;
+		text-transform: uppercase;
+		line-height: 45px;
+		width: auto; height: 45px;
+		float: left;
+	}
+	header nav ul li a:hover span {
+		color: #d1d1d1;
+	}
+	header nav ul li a:before {
+		content: '';
+		background: #ffe001;
+		width: 100%; height: 2px;
+		-webkit-transform: scaleX(0);
+		   -moz-transform: scaleX(0);
+		     -o-transform: scaleX(0);
+		        transform: scaleX(0);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		   -moz-transition: all 0.3s ease-in-out 0s;
+		     -o-transition: all 0.3s ease-in-out 0s;
+		        transition: all 0.3s ease-in-out 0s;
+		position: absolute;
+		bottom: 0; left: 0;
+		visibility: hidden;
+	}
+	header nav ul li a:hover:before {
+		-webkit-transform: scaleX(1);
+		   -moz-transform: scaleX(1);
+		     -o-transform: scaleX(1);
+		        transform: scaleX(1);
+		visibility: visible;
+	}
+	header nav ul li a span:before {
+		font-family: FontAwesome; font-weight: normal; font-size: .9em;
+		text-align: center;
+		margin-right: 6px;
+		float: left;
+	}
+}
+@media all and (min-width: 1000px) {
+	header nav ul li.hideLinks {
+		display: none;
+	}
+}
+
+/************************************************************* MENU MOBILE */
+
+header div#toggleMenu {
+	width: 45px; height: 45px;
+	position: fixed;
+	top: 12px; left: 10px;
+	z-index: 150;
+}
+@media all and (min-width: 1100px) { /*851*/
+	header div#toggleMenu {
+		display: none;
+	}
+}
+header div#toggleMenu span,
+header div#toggleMenu.open span {
+	font-family: FontAwesome; font-weight: normal; font-size: 3em; color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	line-height: 45px;
+	width: 45px; height: 45px;
+	cursor: pointer;
+	float: left;
+}
+header div#toggleMenu span:hover,
+header div#toggleMenu.open span:hover {
+	color: rgba(255, 255, 255, 1);
+}
+header div#toggleMenu span:before {
+	content: '\f0c9';
+}
+header div#toggleMenu.open span:before {
+	content: '\f00d';
+}
+
+@media all and (max-width: 1100px) { /*851*/
+	header nav#menu {
+		background: rgba(36, 43, 54, 0.95);
+		text-align: center;
+		width: 100%; height: 100%;
+		-webkit-transform: scale(1.5);
+		   -moz-transform: scale(1.5);
+				transform: scale(1.5);
+		-webkit-transition: 350ms ease all;
+		   -moz-transition: 350ms ease all;
+				transition: 350ms ease all;
+		overflow: hidden;
+		position: fixed;
+		top: 0; left: 0;
+		z-index: 140;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		visibility: hidden;
+	}
+	header nav#menu.opened {
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+				transform: scale(1);
+		-webkit-transition: 350ms ease all;
+		   -moz-transition: 350ms ease all;
+				transition: 350ms ease all;
+		opacity: 1;
+		filter: alpha(opacity=100);
+		visibility: visible;
+	}
+	header nav#menu ul {
+		width: 100%; height: 100%;
+		list-style: none;
+		overflow-y: auto;
+		float: left;
+	}
+	header nav#menu ul li {
+		width: 90%; height: 60px;
+		margin: 0 auto 8px;
+		display: block;
+	}
+	header nav#menu ul li:first-child {
+		font-family: UbuntuCondensed; font-weight: normal; font-size: 3.0em; color: rgba(255, 224, 1, 0.8);
+		line-height: 60px;
+		margin-bottom: 5px;
+	}
+	header nav#menu ul li:nth-child(n+2):after {
+		content: " ";
+		background: #161a1f;
+		width: 0%; height: 60px;
+		margin: -60px 0 0 5%;
+		-webkit-border-radius: 5px;
+		   -moz-border-radius: 5px;
+		        border-radius: 5px;
+		-webkit-transition: 350ms ease all;
+		   -moz-transition: 350ms ease all;
+				transition: 350ms ease all;
+		position: absolute;
+		left: 0;
+	}
+	header nav#menu ul li:hover:after {
+		width: 90%;
+	}
+	header nav#menu ul li a {
+		font-family: UbuntuCondensed; font-weight: normal; font-size: 1.5em; color: rgba(255, 255, 255, 0.8);
+		line-height: 60px;
+		width: 100%; height: 60px;
+		margin: 0 auto;	
+		border: 1px solid #707070;
+		-webkit-border-radius: 5px;
+		   -moz-border-radius: 5px;
+		        border-radius: 5px;
+		-webkit-transition: 350ms ease all;
+		   -moz-transition: 350ms ease all;
+		        transition: 350ms ease all;
+		position: relative;
+		z-index: 4;
+		display: block;
+	}
+	header nav#menu ul li a:hover {
+		color: rgba(255, 255, 255, 1);
+	}
+	header nav#menu ul li a span:before {
+		font-family: FontAwesome; font-weight: normal; 
+		text-align: center;
+		margin-right: 12px;
+	}
+}
+
+/***************************************************************************/
+/* HOME :: NEXT EVENT ******************************************************/
+
+main#noCountdown section.nextEvent {
+	display: none;
+}
+
+/**/
+
+section.nextEvent {
+	width: 100%; height: auto;
+	padding: 40px 25px;
+}
+@media all and (min-width: 300px) {
+	main#noCountdown {
+		margin-top: 40px;
+	}
+	section.nextEvent {
+		margin-top: 40px;
+	}
+}
+@media all and (min-width: 768px) {
+	main#noCountdown {
+		margin-top: 20px;
+	}
+	section.nextEvent {
+		margin-top: 50px;
+	}
+}
+@media all and (min-width: 1000px) {
+	main#noCountdown {
+		margin-top: 100px;
+	}
+	section.nextEvent {
+		margin-top: 150px;
+		height: 265px;
+	}
+}
+@media all and (min-width: 1150px) {
+	section.nextEvent {
+		width: 1100px;
+	}
+}
+section.nextEvent .countdownEvent {
+	text-align: center;
+	width: 100%; height: auto;
+	float: left;
+}
+@media all and (min-width: 1000px) {
+	section.nextEvent .countdownEvent {
+		width: 60%;
+	}
+}
+section.nextEvent .countdownEvent .countdown-container {
+	width: 100%;
+	float: left;	
+}
+section.nextEvent .countdownEvent .countdown-container .clock-item {
+	font-family: AntiqueOlive; font-weight: bold; font-size: 1.3em;
+	width: 25%; height: 100%;
+	padding: 10px 10px 0;
+	float: left;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* IE10+ CSS styles go here */
+	section.nextEvent .countdownEvent .countdown-container .clock-item {
+		font-family: GothamBlack; font-style: italic;
+	}
+}
+section.nextEvent .countdownEvent .countdown-container .clock-item.desc {
+	color: rgba(255, 255, 255, .1);
+	text-align: center;
+}
+section.nextEvent .countdownEvent .countdown-container .clock-item .inner {
+	width: 100%; height: 100%;
+	float: left;
+}
+section.nextEvent .countdownEvent .countdown-container .clock-item .inner .clock-canvas {
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	width: 100%; height: 0px;
+	padding-bottom: 100%;
+	float: left;
+}
+section.nextEvent .countdownEvent .countdown-container .clock-item .inner .text {
+	font-weight: bold;
+	text-align: center;
+	width: 100%; height: 0px;
+	padding-bottom: 100%;
+	position: relative;
+	top: 0;
+}
+section.nextEvent .countdownEvent .countdown-container .clock-item .inner .text .val {
+	font-size: 5.8rem; color: #fff;
+	text-shadow: -1px 2px 2px rgba(0, 0, 0, 1);
+	width: 100%; height: 100%;
+	padding-top: 22%;
+	position: absolute;
+}
+@media all and (max-width: 450px) {
+	section.nextEvent .countdownEvent .countdown-container .clock-item {
+		font-size: .9em;
+	}
+	section.nextEvent .countdownEvent .countdown-container .clock-item .inner .text .val {
+		font-size: 3rem; 
+	}
+}
+@media all and (max-width: 400px) {
+	section.nextEvent .countdownEvent .countdown-container .clock-item {
+		font-size: .7em;
+	}
+	section.nextEvent .countdownEvent .countdown-container .clock-item .inner .text .val {
+		font-size: 2.4rem; 
+	}
+}
+section.nextEvent .eventLayout {
+	width: 100%; height: 100%;
+	float: right;
+}
+@media all and (min-width: 1000px) {
+	section.nextEvent .eventLayout {
+		width: 40%;
+	}
+	section.nextEvent .eventLayout a.eventName {
+		display: none;
+	}
+}
+section.nextEvent .eventLayout img {
+	height: 100%;
+}
+section.nextEvent .eventLayout div {
+	position: relative;
+	bottom: 0; right: 0;
+}
+@media all and (max-width: 999px) {
+	section.nextEvent .eventLayout {
+		height: auto;
+		margin-top: 20px;
+	}
+	section.nextEvent .eventLayout a.eventName {
+		font-family: AntiqueOlive; font-size: 8vw;
+	}
+	section.nextEvent .eventLayout img,
+	section.nextEvent .eventLayout div {
+		display: none;
+	}
+}
+section.nextEvent .eventLayout div a {
+	font-family: AntiqueOlive; font-size: 2.8em;
+	position: absolute;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* IE10+ CSS styles go here */
+	section.nextEvent .eventLayout a.eventName {
+		font-family: GothamBlack; font-style: italic;
+	}
+	section.nextEvent .eventLayout div a {
+		font-family: GothamBlack; font-style: italic;
+	}
+}
+section.nextEvent .eventLayout.Adria,
+section.nextEvent .eventLayout.Franciacorta,
+section.nextEvent .eventLayout.Imola,
+section.nextEvent .eventLayout.Misano,
+section.nextEvent .eventLayout.Monza,
+section.nextEvent .eventLayout.Mugello,
+section.nextEvent .eventLayout.Vallelunga {
+	text-align: center;
+}
+section.nextEvent .eventLayout.Adria div a {
+	bottom: 130px;
+	right: 20px;
+}
+section.nextEvent .eventLayout.Franciacorta div a {
+	font-size: 1.7em;
+	bottom: 40px;
+	right: 20px;
+}
+section.nextEvent .eventLayout.Vallelunga div a {
+	font-size: 1.6em;
+	bottom: 20px;
+	right: 0px;
+}
+section.nextEvent .eventLayout.Imola {
+	text-align: right;
+}
+section.nextEvent .eventLayout.Imola div a {
+	bottom: 110px;
+	left: 60px;
+}
+section.nextEvent .eventLayout.Misano div a {
+	bottom: 0;
+	right: 20px;
+}
+section.nextEvent .eventLayout.Monza div a {
+	bottom: 100px; 
+	right: 20px;
+}
+section.nextEvent .eventLayout.Mugello {
+	text-align: right;
+}
+section.nextEvent .eventLayout.Mugello div a {
+	bottom: 0;
+	left: 20px;
+}
+section.nextEvent .eventLayout a:hover {
+	color: #f9c922;
+}
+
+/***************************************************************************/
+/* HOME :: NEWS ************************************************************/
+
+ul#newsList {
+	width: 100%; height: auto;
+	margin-top: 40px;
+	list-style: none;
+	float: left;
+}
+@media all and (max-width: 999px) {
+	ul#newsList {
+		margin-top: 20px;
+	}
+}
+@media all and (max-width: 600px) {
+	ul#newsList {
+		margin-top: 0;
+	}
+}
+ul#newsList li {
+	width: 100%;
+	float: left;
+}
+ul#newsList li div {
+	font-size: 1.2em;
+	line-height: 150%;
+	background-color: #242b36;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	        background-size: cover;
+	height: 400px; /*500*/
+	margin-bottom: -100px;
+	padding: 40px 70px; /*padding: 70px;*/
+	position: relative;
+	z-index: 10;
+	-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+	   -moz-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+	     -o-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+			clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+@media all and (max-width: 1000px) {
+	ul#newsList li div {
+		margin-top: 40px;
+	}
+}
+@media all and (min-width: 300px) {
+	ul#newsList li div {
+		width: 100%;
+	}
+}
+@media all and (min-width: 1000px) {
+	ul#newsList li div {
+		width: 50%;
+	}
+}
+ul#newsList li:nth-child(odd) div {
+	float: left;
+}
+ul#newsList li:nth-child(odd) div:last-child {
+	text-align: right;
+	margin-top: 40px; /*50*/
+}
+ul#newsList li:nth-child(even) div {
+	float: right;
+}
+ul#newsList li:nth-child(even) div:first-child {
+	text-align: left;
+	margin-top: 40px; /*50*/
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* IE10+ CSS styles go here */
+	ul#newsList li:nth-child(odd) div:last-child,
+	ul#newsList li:nth-child(even) div:first-child {
+		margin-top: 0;
+	}
+}
+ul#newsList li div h1 {
+	font-size: 1.6em;
+	border-bottom: 2px solid #ffff00 ;
+	padding: 10px 10px 20px;
+}
+@media all and (max-width: 1170px) and (min-width: 1000px) {
+	ul#newsList li div span.newsPreview {
+		font-size: 0.8em;
+		line-height: 150%;
+	}
+}
+@media all and (max-width: 450px) {
+	ul#newsList li:nth-child(odd) div {
+		height: 330px;
+	}
+	ul#newsList li:nth-child(even) div {
+		height: 390px;
+	}
+	ul#newsList li div {
+		padding: 70px 20px;
+	}
+	ul#newsList li div h1 {
+		border: none;
+		padding: 0;
+	}
+	ul#newsList li div span {
+		display: none;
+	}
+}
+ul#newsList li div a {
+	font-size: .8em; color: #0a0a0a;
+	background: #ffd700 ;
+	padding: 10px 20px;
+}
+ul#newsList li div a:hover {
+	color: #b7b7b7;
+	background: #161a1f;
+}
+
+/***************************************************************************/
+/* HOME :: PARTNER *********************************************************/
+
+ul#partnerList {
+	width: 100%; height: auto;
+	margin-top: 100px;
+	list-style: none;
+	float: left;
+}
+ul#partnerList li {
+	margin: 40px 25px 0;
+	float: left;
+}
+ul#partnerList li img {
+	width: 100%;
+	opacity: 0.4;
+    filter: alpha(opacity=40);
+	float: left;
+}
+ul#partnerList li img:hover {
+	opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+/***************************************************************************/
+/* HOME :: MEDIA ***********************************************************/
+
+section.media {
+	padding: 40px 25px 0;
+}
+section ul#mediaList {
+	height: auto;
+	margin-bottom: 30px;
+	list-style: none;
+	float: left;
+}
+section ul#mediaList li {
+	height: 320px;
+	padding: 20px;
+	float: left;
+}
+@media all and (min-width: 300px) {
+	section.media {
+		width: 100%;
+	}
+	section ul#mediaList {
+		width: 100%;
+	}
+	section ul#mediaList li {
+		width: 100%;
+	}
+}
+@media all and (min-width: 768px) {
+	section.media {
+		width: 100%;
+	}
+	section ul#mediaList {
+		width: 100%;
+	}
+	section ul#mediaList li {
+		width: 50%;
+	}
+}
+@media all and (min-width: 1150px) {
+	section.media {
+		width: 1100px;
+	}
+	section ul#mediaList {
+		width: 1100px;
+	}
+	section ul#mediaList li {
+		width: 50%;
+	}
+}
+section ul#mediaList li a {
+	background-color: #242b36;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	        background-size: cover;
+	width: 100%; height: 280px;
+	padding: 20px;
+	-webkit-transition: all 0.15s ease-in-out 0s;
+	   -moz-transition: all 0.15s ease-in-out 0s;
+	     -o-transition: all 0.15s ease-in-out 0s;
+	        transition: all 0.15s ease-in-out 0s;
+    filter: alpha(opacity=80);
+	opacity: 0.8;
+	float: left;
+}
+section ul#mediaList li a:hover {
+    filter: alpha(opacity=100);
+	opacity: 1;
+}
+section ul#mediaList li a span.mediaInfo {
+	background-color: rgba(204, 0, 0, 0.8);
+	font-family: UbuntuCondensed; color: #fff;
+	text-transform: uppercase;
+	width: auto; height: auto;
+	padding: 10px 20px;
+    filter: alpha(opacity=80);
+	opacity: 0.8;
+	overflow: hidden;
+	float: left;
+}
+@media all and (max-width: 350px) {
+	section ul#mediaList li a span.mediaInfo:before {
+		display: none;
+	}
+}
+section ul#mediaList li a span.mediaInfo:before {
+	font-family: FontAwesome; font-weight: normal; font-size: 2em;
+	text-align: center;
+	width: auto; height: 39px;
+	margin-top: -6px;
+	margin-right: 10px;
+	padding-top: 3px;
+	float: left;
+}
+section ul#mediaList li a:hover span.mediaInfo {
+	background-color: rgba(204, 0, 0, 1);
+}
+section ul#mediaList li a span.mediaInfo span.mediaEvent {
+	font-size: 1.5em;
+	line-height: .9em;
+	width: auto; height: 39px;
+	margin-top: -6px;
+	float: left;
+}
+section ul#mediaList li a span.mediaInfo span.mediaEvent span.mediaDate {
+	font-size: .7em;
+}
+
+/***************************************************************************/
+/* SECTION :: GALLERY ******************************************************/
+
+section div.gallery {
+	width: 100%; height: auto;
+	margin-bottom: 30px;
+	list-style: none;
+	float: left;
+}
+section div.gallery figure {
+	width: 100%; height: auto;
+	padding: 10px;
+	float: left;
+}
+@media all and (min-width: 600px) {
+	section div.gallery figure {
+		width: 50%;
+	}
+}
+@media all and (min-width: 800px) {
+	section div.gallery figure {
+		width: 33.33%;
+	}
+}
+@media all and (min-width: 900px) {
+	section div.gallery figure {
+		width: 20%;
+	}
+}
+@media all and (min-width: 1150px) {
+	section div.gallery figure {
+		width: 16.66%;
+	}
+}
+section div.gallery figure a {
+	background: #242b36;
+	width: 100%; height: auto !important;
+	border: 8px solid #d6d7d7;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+	float: left;
+}
+section div.gallery figure a img {
+	width: 100%;
+    filter: alpha(opacity=80);
+	opacity: 0.8;
+	float: left;
+}
+section div.gallery figure a:hover img {
+    filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/***************************************************************************/
+/* SECTION :: PAGE TEMPLATE ************************************************/
+
+body.bgPage section {
+	width: 100%;
+}
+@media all and (min-width: 1150px) {
+	body.bgPage section {
+		width: 1100px;
+		margin-top: 150px;
+	}
+}
+section div.sectionBox {
+	background: rgba(13, 15, 18, 0.5);
+	width: 100%; height: auto;
+	padding: 25px;
+	float: left;
+}
+@media all and (min-width: 1150px) {
+	section div.sectionBox {
+		min-height: 610px;
+	}
+}
+@media all and (min-width: 1150px) {
+	section div.sectionBox {
+		margin-bottom: 40px;
+		padding: 40px;
+		-webkit-border-radius: 25px;
+		   -moz-border-radius: 25px;
+				border-radius: 25px;
+	}
+}
+@media all and (max-width: 1150px) {
+	section div.sectionBox {
+		padding-top: 140px;
+	}
+}
+@media all and (max-width: 1099px) { /*850*/
+	section div.sectionBox {
+		padding-top: 80px;
+	}
+}
+@media all and (max-width: 398px) {
+	section div.sectionBox {
+		padding-top: 60px;
+	}
+}
+section div.sectionBox h1.sectionTitle {
+	font-family: UbuntuCondensed; font-size: 3.5em;
+	border-bottom: 2px solid #ffff00;
+	text-align: center;
+    padding: 10px 10px -10px;
+}
+section div.sectionBox h1.sectionTitle.shop {
+	min-height: 40px; height: auto;
+}
+@media all and (min-width: 1150px) {
+	section div.sectionBox h1.sectionTitle {
+		margin-bottom: 25px;
+	}
+}
+@media all and (max-width: 398px) {
+	section div.sectionBox h1.sectionTitle {
+		font-size: 2.0em;
+	}
+}
+section div.sectionBox h1.sectionTitle b {
+	color: #ffff00 ;
+}
+
+
+section div.sectionBox h2.sectionTitle {
+	font-family: UbuntuCondensed; font-size: 1.5em;
+	text-align: center;
+	line-height: 40px;
+	width: 100%; height: 40px;
+	margin: 0 0 10px; padding: 0;
+	float: left;
+}
+section div.sectionBox h2.sectionTitle.shop {
+	min-height: 40px; height: auto;
+}
+@media all and (min-width: 1150px) {
+	section div.sectionBox h2.sectionTitle {
+		margin-bottom: 25px;
+	}
+}
+@media all and (max-width: 398px) {
+	section div.sectionBox h2.sectionTitle {
+		font-size: 2.0em;
+	}
+}
+section div.sectionBox h2.sectionTitle b {
+	color: #ffff00 ;
+}
+
+
+/***************************************************************************/
+/* SECTION :: NEWS *********************************************************/
+
+section div.sectionBox ul.newsList {
+	width: 100%; height: auto;
+	margin-bottom: 30px;
+	list-style: none;
+	float: left;
+}
+section div.sectionBox ul.newsList li {
+	width: 100%; height: auto;
+	padding: 10px;
+	float: left;
+}
+@media all and (min-width: 768px) {
+	section div.sectionBox ul.newsList li {
+		width: 50%;
+	}
+}
+@media all and (min-width: 900px) {
+	section div.sectionBox ul.newsList li {
+		width: 33.33%;
+	}
+}
+section div.sectionBox ul.newsList li div.newsBox {
+	background: #242b36;
+	width: 100%; height: auto;
+	border: 6px solid rgba(214, 215, 215, 0.9);
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+	float: left;
+}
+section div.sectionBox ul.newsList li div.newsBox a {
+	width: 100%; height: auto;
+    filter: alpha(opacity=80);
+	opacity: 0.8;
+	float: left;
+}
+section div.sectionBox ul.newsList li div.newsBox a:hover {
+    filter: alpha(opacity=100);
+	opacity: 1;
+}
+section div.sectionBox ul.newsList li div.newsBox a img {
+	width: 100%;
+	border-bottom: 1px dotted #d6d7d7;
+	float: left;
+}
+section div.sectionBox ul.newsList li div.newsBox a span.newsDate {
+	font-family: UbuntuCondensed; font-size: .8em; color: #6a6f76;
+	line-height: 30px;
+	width: 100%; height: 30px;
+	padding: 0 15px;
+	float: left;
+}
+section div.sectionBox ul.newsList li div.newsBox a h2 {
+	font-size: 1.4em; color: #ffe001;
+	width: 100%;
+	margin: 0; padding: 0 15px;
+	float: left;
+}
+section div.sectionBox ul.newsList li div.newsBox a span.newsPreview {
+	width: 100%;
+	margin: 0; padding: 10px 15px;
+	float: left;
+}
+
+/***************************************************************************/
+/* SECTION :: COMPLETE NEWS ************************************************/
+
+section div.sectionBox div.newsPhoto {
+	width: 100%; height: 400px;
+	position: relative;
+	float: left;
+}
+section div.sectionBox div.newsPhoto h1 {
+	background: rgba(13, 15, 18, 0.5);
+	line-height: 150%;
+	width: 100%; height: auto;
+	margin: 0;
+	padding: 10px;
+	position: absolute;
+	left: 0; bottom: 0;
+}
+section div.sectionBox div.newsDesc {
+	font-size: 1.1em;
+	line-height: 150%;
+	text-align: justify;
+	width: 100%; height: auto;
+	margin-top: 25px;
+	float: left;
+}
+section div.sectionBox div.newsDesc b,
+section div.sectionBox div.newsDesc strong {
+	color: #f9c922;
+}
+section div.sectionBox div.newsDesc a,
+section div.sectionBox div.newsDesc u {
+	text-decoration: none;
+	border-bottom: 1px dotted #f9c922;
+}
+section div.sectionBox div.newsDesc a:hover {
+	color: #f9c922;
+	border-bottom: none;
+}
+section div.sectionBox div.newsDesc img {
+	max-width: 100%;
+}
+
+/***************************************************************************/
+/* SECTION :: MEDIA ********************************************************/
+
+section div.sectionBox ul.mediaList {
+	width: 100%; height: auto;
+	list-style: none;
+	float: left;
+}
+section div.sectionBox ul.mediaList li {
+	height: 320px;
+	padding: 20px;
+	float: left;
+}
+@media all and (max-width: 767px) {
+	section div.sectionBox ul.mediaList li {
+		width: 100%;
+	}
+	section div.sectionBox ul.mediaList li:nth-last-child() a {
+		padding-bottom: 0;
+	}
+}
+@media all and (min-width: 768px) {
+	section div.sectionBox ul.mediaList li {
+		width: 50%;
+	}
+	section div.sectionBox ul.mediaList li:nth-last-child(-n+2) a {
+		padding-bottom: 0;
+	}
+}
+section div.sectionBox ul.mediaList li a {
+	background-color: #242b36;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	        background-size: cover;
+	width: 100%; height: 280px;
+	padding: 20px;
+	-webkit-transition: all 0.15s ease-in-out 0s;
+	   -moz-transition: all 0.15s ease-in-out 0s;
+	     -o-transition: all 0.15s ease-in-out 0s;
+	        transition: all 0.15s ease-in-out 0s;
+    filter: alpha(opacity=80);
+	opacity: 0.8;
+	float: left;
+}
+section div.sectionBox ul.mediaList li a:hover {
+    filter: alpha(opacity=100);
+	opacity: 1;
+}
+@media all and (max-width: 767px) {
+	section div.sectionBox ul.mediaList li:nth-last-child() a {
+		padding-bottom: 0;
+	}
+}
+@media all and (min-width: 768px) {
+	section div.sectionBox ul.mediaList li:nth-last-child(-n+2) a {
+		padding-bottom: 0;
+	}
+}
+section div.sectionBox ul.mediaList li a span.mediaInfo {
+	background-color: rgba(204, 0, 0, 0.8);
+	font-family: UbuntuCondensed; color: #fff;
+	text-transform: uppercase;
+	width: auto; height: auto;
+	padding: 10px 20px;
+    filter: alpha(opacity=80);
+	opacity: 0.8;
+	overflow: hidden;
+	float: left;
+}
+@media all and (max-width: 350px) {
+	section div.sectionBox ul.mediaList li a span.mediaInfo:before {
+		display: none;
+	}
+}
+section div.sectionBox ul.mediaList li a span.mediaInfo:before {
+	font-family: FontAwesome; font-weight: normal; font-size: 2em;
+	text-align: center;
+	width: auto; height: 39px;
+	margin-top: -6px;
+	margin-right: 10px;
+	padding-top: 3px;
+	float: left;
+}
+section div.sectionBox ul.mediaList li a:hover span.mediaInfo {
+	background-color: rgba(204, 0, 0, 1);
+}
+section div.sectionBox ul.mediaList li a span.mediaInfo span.mediaEvent {
+	font-size: 1.5em;
+	line-height: .9em;
+	width: auto; height: 39px;
+	margin-top: -6px;
+	float: left;
+}
+section div.sectionBox ul.mediaList li a span.mediaInfo span.mediaEvent span.mediaDate {
+	font-size: .7em;
+}
+
+/***************************************************************************/
+/* SECTION :: REGULATION ***************************************************/
+
+section div.regulationBox {
+	background: rgba(13, 15, 18, 0.5);
+	font-family: UbuntuLight;
+	line-height: 150%;
+	text-align: justify;
+	width: 100%; height: auto;
+	padding: 25px;
+	float: left;
+}
+@media all and (min-width: 1150px) {
+	section div.regulationBox {
+		margin-bottom: 40px;
+		padding: 40px;
+		-webkit-border-radius: 25px;
+		   -moz-border-radius: 25px;
+				border-radius: 25px;
+	}
+}
+@media all and (max-width: 1150px) {
+	section div.regulationBox {
+		padding-top: 140px;
+	}
+}
+@media all and (max-width: 768px) {
+	section div.regulationBox {
+		padding-top: 80px;
+	}
+}
+@media all and (max-width: 398px) {
+	section div.regulationBox {
+		padding-top: 60px;
+	}
+}
+section div.regulationBox h1 {
+	font-family: UbuntuCondensed; font-size: 2.5em;
+	text-align: center;
+	width: 100%;
+	margin: 0; padding: 0 0 20px;
+}
+section div.regulationBox h1 b {
+	color: #cc0000;
+}
+section div.regulationBox h2,
+section div.regulationBox h3,
+section div.regulationBox h4,
+section div.regulationBox h5 {
+	font-family: UbuntuCondensed;
+	text-align: left;
+	width: 100%;
+	margin: 0; padding: 0;
+}
+section div.regulationBox h2 {
+	font-size: 1.6em; color: #e74c3c;
+	border-bottom: 1px dotted #e74c3c;
+	margin: 20px 0;
+	padding: 0 0 5px;
+}
+section div.regulationBox h3 {
+	font-size: 1.2em; color: #f9c922;
+}
+section div.regulationBox h4 {
+	background: rgba(21, 149, 213, 0.1);
+	font-size: 1.6em; color: #7995d5;
+	border-top: 1px dotted #7995d5;
+	border-bottom: 1px dotted #7995d5;
+	margin: 20px 0;
+	padding: 5px 10px;
+}
+section div.regulationBox div.regulationInfo {
+	background: rgba(21, 149, 213, 0.1);
+	font-family: UbuntuCondensed; font-size: 1.1em; color: #f9c922;
+	text-align: center;
+	width: 100%; height: auto;
+	margin: 0 0 20px;
+	padding: 5px 10px;
+	border-top: 1px dotted #7995d5;
+	border-bottom: 1px dotted #7995d5;
+	float: left;
+}
+section div.regulationBox div.fileDownload {
+	font-family: UbuntuCondensed; font-size: 1.1em;
+	text-align: center;
+	width: 100%; height: auto;
+	margin: -10px 0 20px;
+	float: left;
+}
+section div.regulationBox div.fileDownload a {
+	color: #ffe001;
+}
+section div.regulationBox div.fileDownload a:hover {
+	color: #e74c3c;
+}
+section div.regulationBox b {
+	color: #7995d5;
+}
+section div.regulationBox u {
+	text-decoration: none;
+	border-bottom: 1px dotted #7995d5;
+}
+section div.regulationBox i {
+	color: #16a085;
+}
+section div.regulationBox i.black,
+section div.regulationBox i.green,
+section div.regulationBox i.purple {
+	font-weight: bold;
+	margin: 0 10px;
+	padding: 2px 6px;
+	white-space: nowrap;
+}
+section div.regulationBox i.black {
+	background: #ebebeb;
+	color: #000;
+	border: 2px solid #000;
+}
+section div.regulationBox i.green {
+	color: #a0ce4e;
+	border: 2px solid #a0ce4e;
+}
+section div.regulationBox i.purple {
+	color: #92278f;
+	border: 2px solid #92278f;
+}
+section div.regulationBox img {
+	max-width: 100%;
+}
+section div.regulationBox table {
+	background: rgba(13, 15, 18, 0.5);
+	width: 100%; height: auto;
+	margin: 25px 0;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+}
+section div.regulationBox table th span {
+	color: #f9c922;
+	width: 100%;
+	border-bottom: 1px dotted #f9c922;
+	display: block;
+}
+section div.regulationBox table th,
+section div.regulationBox table td {
+	text-align: center;
+	padding: 8px 20px;
+}
+
+/***************************************************************************/
+/* SECTION :: ENTRY LIST ***************************************************/
+
+section div.sectionBox ul.entryList {
+	width: 100%; height: auto;
+	margin-top: -20px;
+	list-style: none;
+	float: left;
+}
+section div.sectionBox ul.entryList li {
+	width: 100%;
+	padding: 20px;
+	float: left;
+}
+@media all and (min-width: 540px) {
+	section div.sectionBox ul.entryList li {
+		width: 50%;
+	}
+}
+@media all and (min-width: 820px) {
+	section div.sectionBox ul.entryList li {
+		width: 33.33%;
+	}
+}
+@media all and (min-width: 1050px) {
+	section div.sectionBox ul.entryList li {
+		width: 25%;
+	}
+}
+section div.sectionBox ul.entryList li div {
+	background-image: url('driver.png');
+	background-position: top center;
+	background-repeat: no-repeat;	
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	        background-size: cover;
+	width: 100%; height: 180px;
+	position: relative;
+	float: left;
+}
+section div.sectionBox ul.entryList li div span.driver {
+	background: rgba(0, 0, 0, 0.6);
+	font-family: UbuntuCondensed; font-style: italic;
+	line-height: 14px;
+	width: 100%; height: 38px;
+	padding: 7px 6px 0;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0; left: 0;
+	z-index: 10;
+}
+section div.sectionBox ul.entryList li div span.driver i {
+	color: #f9c922;
+	text-transform: uppercase;
+}
+section div.sectionBox ul.entryList li div span.driver span {
+	font-size: 0.9em; color: rgba(255, 255, 255, 0.7);
+	padding-left: 6px;
+}
+section div.sectionBox ul.entryList li div span.num {
+	background: #f9c922;
+	font-family: UbuntuCondensed; font-style: italic; font-size: 2.5em; color: #161a1f;
+	line-height: 35px;
+	width: auto; height: 35px;
+	padding: 0 6px;
+	position: absolute;
+	bottom: 33px; left: 0;
+	z-index: 20;
+}
+section div.sectionBox ul.entryList li div span.num::before {
+	content: '';
+    border-right: 15px solid transparent;
+	border-top: 35px solid #f9c922;
+	margin-left: 15px;
+	position: absolute;
+	bottom: 0; right: -15px;
+}
+section div.sectionBox ul.entryList li div span.num.wildcard {
+	background: #fff;	
+}
+section div.sectionBox ul.entryList li div span.num.wildcard::before {
+	border-top: 35px solid #fff;
+}
+section div.sectionBox ul.entryList li div span.class {
+	background: #e74c3c;
+	font-family: UbuntuCondensed; font-style: italic; font-size: 1.1em; color: #fff;
+	line-height: 25px;
+	width: auto; height: 25px;
+	padding: 0 6px 0 45px;
+	position: absolute;
+	bottom: 38px; left: 0;
+	z-index: 15;
+}
+section div.sectionBox ul.entryList li div span.class::before {
+	content: '';
+    border-right: 11px solid transparent;
+	border-top: 25px solid #e74c3c;
+	margin-left: 11px;
+	position: absolute;
+	bottom: 0; right: -11px;
+}
+
+/***************************************************************************/
+/* SECTION :: STANDING *****************************************************/
+
+section div.sectionBox ul.standingList {
+	width: 100%; height: auto;
+	margin: 10px 0 20px;
+	list-style: none;
+	float: left;
+}
+section div.sectionBox ul.standingList li {
+	font-size: 0.9em;
+	line-height: 30px;
+	width: 100%; height: 30px;
+	border-bottom: 1px dotted #707070;
+	overflow: hidden;
+	float: left;
+}
+section div.sectionBox ul.standingList li:first-child {
+	height: 61px;
+	border-bottom: 2px solid #f9c922;
+}
+section div.sectionBox ul.standingList li:nth-child(even) {
+	background: rgba(0, 0, 0, 0.1);
+}
+section div.sectionBox ul.standingList li span {
+	text-align: center;
+	height: 30px;
+	margin: 0 10px;
+	float: left;
+}
+section div.sectionBox ul.standingList li:first-child span {
+	height: 56px;
+	margin-bottom: 5px;
+}
+section div.sectionBox ul.standingList li span.class {
+	font-family: UbuntuCondensed; font-size: 1.7em; color: #f9c922;
+	line-height: 85px;
+}
+section div.sectionBox ul.standingList li span.pos {
+	width: 25px;
+}
+section div.sectionBox ul.standingList li span.num {
+	font-size: 0.9em; color: rgba(255, 255, 255, 0.6);
+	text-align: right;
+	width: 25px;
+	margin-left: 0;
+}
+section div.sectionBox ul.standingList li span.driver {
+	margin: 0 10px 0 0;
+}
+section div.sectionBox ul.standingList li span.auto {
+	font-style: italic; color: rgba(255, 255, 255, 0.6);
+}
+section div.sectionBox ul.standingList li span.total {
+	font-weight: bold; color: #f9c922;
+	width: 30px;
+	margin-right: 0;
+}
+@media all and (max-width: 550px) {
+	section div.sectionBox ul.standingList li {
+		height: 36px;
+	}
+	section div.sectionBox ul.standingList li:first-child {
+		height: 61px;
+	}
+	section div.sectionBox ul.standingList li span {
+		line-height: 36px;
+		height: 36px;
+	}
+	section div.sectionBox ul.standingList li span.num {
+		font-size: 1em;
+	}
+	section div.sectionBox ul.standingList li span.driver,
+	section div.sectionBox ul.standingList li span.auto {
+		text-align: left;
+		line-height: 18px;
+		width: auto;
+		min-width: 50%; height: 18px;
+	}
+	section div.sectionBox ul.standingList li span.auto {
+		font-size: 0.9em;
+		margin-left: 0;
+	}
+	section div.sectionBox ul.standingList li span.total {
+		margin-top: -18px;
+	}
+}
+@media all and (max-width: 410px) {
+	section div.sectionBox ul.standingList li span.num {
+		display: none;
+	}
+	section div.sectionBox ul.standingList li span.auto {
+		font-size: 0.8em;
+		margin-left: 0;
+	}
+}
+section div.sectionBox ul.standingList li span.gap {
+	font-size: 0.9em; color: rgba(249, 201, 34, 0.5);
+	margin: 0;
+}
+section div.sectionBox ul.standingList li span.event {
+	width: 60px;
+}
+@media all and (max-width: 1010px) {
+	section div.sectionBox ul.standingList li span.total {
+		margin-right: 10px;
+	}
+	section div.sectionBox ul.standingList li span.event {
+		display: none;	
+	}
+}
+section div.sectionBox ul.standingList li span.event img {
+	width: 60px; height: 40px;
+	float: left;
+}
+section div.sectionBox ul.standingList li span.event span.eventName {
+	font-family: UbuntuCondensed; font-size: 0.8em;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 12px;
+	width: 100%; height: 12px;
+	margin: 4px 0 0;
+	overflow: hidden;
+	float: left;
+}
+section div.sectionBox ul.standingList li span.event s {
+	color: #cc0000;
+}
+
+/***************************************************************************/
+/* SECTION :: SUBSCRIPTION *************************************************/
+
+section div.sectionBox ul.subscriptionList {
+	width: 100%; height: auto;
+	margin: 10px 0 20px;
+	list-style: none;
+	float: left;
+}
+section div.sectionBox ul.subscriptionList li {
+	font-size: 0.9em;
+	line-height: 50px;
+	width: 100%; height: 50px;
+	border-bottom: 1px dotted #707070;
+	overflow: hidden;
+	float: left;
+}
+section div.sectionBox ul.subscriptionList li:first-child {
+	height: 61px;
+	border-bottom: 2px solid #f9c922;
+}
+section div.sectionBox ul.subscriptionList li:nth-child(even) {
+	background: rgba(0, 0, 0, 0.1);
+}
+section div.sectionBox ul.subscriptionList li span {
+	text-align: center;
+	height: 30px;
+	margin: 0 10px;
+	float: left;
+}
+section div.sectionBox ul.subscriptionList li:first-child span {
+	height: 56px;
+	margin-bottom: 5px;
+}
+section div.sectionBox ul.subscriptionList li span.class {
+	font-family: UbuntuCondensed; font-size: 1.7em; color: #f9c922;
+	line-height: 85px;
+}
+@media all and (max-width: 550px) {
+	section div.sectionBox ul.subscriptionList li {
+		
+		height: 36px;
+		
+	}
+	section div.sectionBox ul.subscriptionList li:first-child {
+		
+		height: 61px;
+		
+	}
+	section div.sectionBox ul.subscriptionList li span {
+		
+		line-height: 36px;
+		height: 36px;
+		
+	}
+}
+@media all and (max-width: 410px) {
+	
+}
+section div.sectionBox ul.subscriptionList li span.event {
+	width: 60px;
+}
+@media all and (max-width: 1010px) {
+	
+	section div.sectionBox ul.subscriptionList li span.event {
+		display: none;	
+	}
+	
+}
+section div.sectionBox ul.subscriptionList li span.event img {
+	width: 60px; height: 40px;
+	float: left;
+}
+section div.sectionBox ul.subscriptionList li span.event span.eventName {
+	font-family: UbuntuCondensed; font-size: 0.8em;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 12px;
+	width: 100%; height: 12px;
+	margin: 4px 0 0;
+	overflow: hidden;
+	float: left;
+}
+section div.sectionBox ul.subscriptionList li label {
+	background: darkslategray;
+	font-weight: normal;
+	line-height: 30px;
+	width: 50px; height: 30px;
+	margin: 10px 5px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	-webkit-user-select: none; /* Safari */        
+	   -moz-user-select: none; /* Firefox */
+	    -ms-user-select: none; /* IE10+/Edge */
+	        user-select: none; /* Standard */
+	cursor: pointer;
+	float: left;
+}
+section div.sectionBox ul.subscriptionList li label::before {
+    content: '€ ';
+}
+section div.sectionBox ul.subscriptionList li label.noEuro::before {
+	content: '';
+}
+section div.sectionBox ul.subscriptionList li label b {
+	font-weight: normal;
+}
+section div.sectionBox ul.subscriptionList li label i {
+	font-style: normal;
+	display: none;
+}
+section div.sectionBox ul.subscriptionList li label.champ {
+	width: 150px;
+}
+section div.sectionBox ul.subscriptionList li label.even {
+	background: darkolivegreen;
+}
+section div.sectionBox ul.subscriptionList li input[type="checkbox"] {
+	display: none;
+}
+section div.sectionBox ul.subscriptionList li input[type="checkbox"]:checked + label {
+	background: #f9c922;
+	color: #0e0f12;
+}
+section div.sectionBox ul.subscriptionList li input[type="checkbox"]:checked + label b {
+	display: none;
+}
+section div.sectionBox ul.subscriptionList li input[type="checkbox"]:checked + label i {
+	display: initial;
+}
+
+/***************************************************************************/
+/* SECTION :: CALENDAR *****************************************************/
+
+section div.sectionBox div.standingYears,
+section div.sectionBox div.calendarYears {
+	font-family: UbuntuCondensed; font-size: 1.1em;
+	width: 100%; height: auto;
+	margin: -10px 0 20px;
+	float: left;
+}
+@media all and (min-width: 1150px) {
+	section div.sectionBox div.standingYears,
+	section div.sectionBox div.calendarYears {
+		margin: -20px 0 20px;
+	}
+}
+section div.sectionBox div.standingYears ul,
+section div.sectionBox div.calendarYears ul {
+	margin: 0 auto;
+	list-style: none;
+	display: flex;
+}
+section div.sectionBox div.standingYears ul li,
+section div.sectionBox div.calendarYears ul li {
+	text-align: center;
+	width: 50px;
+	float: left;
+}
+section div.sectionBox div.standingYears ul li:nth-child(n+2),
+section div.sectionBox div.calendarYears ul li:nth-child(n+2) {
+	border-left: 2px solid #f9c922;
+	width: 52px;
+}
+section div.sectionBox div.standingYears ul li a:hover,
+section div.sectionBox div.calendarYears ul li a:hover {
+	color: #f9c922;
+}
+section div.sectionBox div.calendarInfo {
+	background: rgba(21, 149, 213, 0.1);
+	font-family: UbuntuCondensed; font-size: 1.1em; color: #f9c922;
+	text-align: center;
+	width: 100%; height: auto;
+	margin: 0 0 20px;
+	padding: 5px 10px;
+	border-top: 1px dotted #7995d5;
+	border-bottom: 1px dotted #7995d5;
+	float: left;
+}
+section div.sectionBox ul.calendarList {
+	width: 100%; height: auto;
+	list-style: none;
+	float: left;
+}
+section div.sectionBox ul.calendarList li {
+	width: 100%; height: 80px;
+	border-bottom: 1px solid #707070;
+	padding: 0 15px;
+	float: left;
+}
+@media all and (min-width: 1150px) {
+	section div.sectionBox ul.calendarList li {
+		padding: 0 25px;
+	}
+}
+section div.sectionBox ul.calendarList li:last-child {
+	border-bottom: none;
+}
+section div.sectionBox ul.calendarList li a.calendarEvent,
+section div.sectionBox ul.calendarList li span.calendarEvent {
+	font-family: UbuntuCondensed; font-size: 1.7em; color: #ebebeb;
+	line-height: 80px;
+    filter: alpha(opacity=80);
+	opacity: 0.8;
+	float: left;
+}
+section div.sectionBox ul.calendarList li:hover a.calendarEvent,
+section div.sectionBox ul.calendarList li:hover span.calendarEvent {
+    filter: alpha(opacity=100);
+	opacity: 1;
+}
+section div.sectionBox ul.calendarList li a.calendarEvent:hover {
+	color: #f9c922;
+}
+section div.sectionBox ul.calendarList li img {
+	height: 60px;
+	margin: 10px 0;
+    filter: alpha(opacity=70);
+	opacity: 0.7;
+	float: right;
+}
+section div.sectionBox ul.calendarList li:hover img {
+    filter: alpha(opacity=100);
+	opacity: 1;
+}
+@media all and (max-width: 400px) {
+	section div.sectionBox ul.calendarList li img {
+		height: 50px;
+		margin: 15px 0;
+	}
+}
+@media all and (max-width: 370px) {
+	section div.sectionBox ul.calendarList li span.calendarEvent {
+		font-size: 1.6em;
+	}
+	section div.sectionBox ul.calendarList li img {
+		height: 30px;
+		margin: 25px 0;
+	}
+}
+section div.sectionBox ul.calendarList li div.calendarDate {
+	font-family: UbuntuCondensed; color: #fff;
+	text-shadow: 0 0 5px #9a0000;
+	text-align: center;
+	width: 50px; height: 60px;
+	margin: 10px 15px 10px 0;
+	float: left;
+}
+@media all and (min-width: 1150px) {
+	section div.sectionBox ul.calendarList li div.calendarDate {
+		margin: 10px 25px 10px 0;	
+	}
+}
+section div.sectionBox ul.calendarList li div.calendarDate span.calendarMonth {
+	font-size: 1.1em;
+	text-transform: uppercase;
+	background: rgba(204, 0, 0, 0.6);
+	line-height: 20px;
+	width: 50px; height: 20px;
+	border-bottom: 1px solid rgba(235, 235, 235, 0.6);
+	-webkit-border-top-left-radius: 3px;
+	    -moz-border-radius-topleft: 3px;
+	        border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	    -moz-border-radius-topright: 3px;
+	        border-top-right-radius: 3px;
+	float: left;
+}
+section div.sectionBox ul.calendarList li:hover div.calendarDate span.calendarMonth {
+	background: rgba(204, 0, 0, 0.9);
+}
+section div.sectionBox ul.calendarList li div.calendarDate span.calendarDay {
+	background: rgba(204, 0, 0, 0.6);
+	font-size: 2em;
+	line-height: 30px;
+	width: 50px; height: 30px;
+	float: left;
+}
+section div.sectionBox ul.calendarList li:hover div.calendarDate span.calendarDay {
+	background: rgba(204, 0, 0, 0.9);
+}
+section div.sectionBox ul.calendarList li div.calendarDate span.calendarRibbon {
+	width: 0; height: 0;
+	border-width: 5px 25px;
+	border-style: solid;
+	border-color: rgba(204, 0, 0, 0.6) rgba(204, 0, 0, 0.6) transparent rgba(204, 0, 0, 0.6);
+	float: left;
+}
+section div.sectionBox ul.calendarList li:hover div.calendarDate span.calendarRibbon {
+	border-color: rgba(204, 0, 0, 0.9) rgba(204, 0, 0, 0.9) transparent rgba(204, 0, 0, 0.9);
+}
+
+/***************************************************************************/
+/* SECTION :: EVENT INFO ***************************************************/
+
+section div.sectionBox ul.eventInfo {
+	width: 100%; height: auto;
+	list-style: none;
+	float: left;
+}
+section div.sectionBox ul.eventInfo li {
+	width: 60%; height: auto;
+	margin: 0 0 20px; padding: 0 8px 3px;
+	border-bottom: 1px dotted #707070;
+	float: right;
+}
+section div.sectionBox ul.eventInfo li:first-child {
+	width: 40%; height: auto;
+	margin: 0; padding: 0;
+	padding-right: 15px;
+	border: none;
+	float: left;
+}
+@media all and (max-width: 500px) {
+	section div.sectionBox ul.eventInfo li {
+		width: 100%;
+		float: left;
+	}
+	section div.sectionBox ul.eventInfo li:first-child {
+		width: 100%;
+		padding: 0;
+	}
+}
+section div.sectionBox ul.eventInfo li:first-child img {
+	width: 100%;
+	float: left;
+}
+section div.sectionBox ul.eventInfo li h2 {
+	font-family: UbuntuCondensed; font-style: italic; font-size: 1em; color: #f9c922;
+	width: auto; height: auto;
+	margin: 0; padding: 12px 0 0;
+	float: left;
+}
+section div.sectionBox ul.eventInfo li span {
+	font-family: UbuntuCondensed; font-size: 1.3em;	color: #c5c5c6;
+	width: auto;
+	float: right;
+}
+section div.sectionBox ul.eventInfo li a:hover span {
+	color: #f9c922;
+}
+section div.sectionBox ul.eventInfo li span:before {
+	margin-left: 10px;
+	float: right;
+}
+section div.sectionBox ul.forum {
+	background: rgba(235, 235, 235, 0.1);
+	width: 100%; height: auto;
+	margin-top: 25px; padding: 20px;
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
+	list-style: none;
+	float: left;
+}
+section div.sectionBox ul.forum li {
+	font-family: UbuntuCondensed; font-size: 1.1em; color: #c5c5c6;
+	width: 100%; height: auto;
+	padding: 10px;
+	border-bottom: 1px dotted #242b36;
+	float: left;
+}
+section div.sectionBox ul.forum li:first-child {
+	font-style: italic; font-size: 1.5em; color: #f9c922;
+}
+section div.sectionBox ul.forum li:first-child span:before {
+	font-style: normal;
+}
+section div.sectionBox ul.forum li:last-child {
+	border: none;
+}
+section div.sectionBox ul.forum li span.data {
+	margin-right: 10px;
+	float: left;
+}
+section div.sectionBox ul.forum li a.post {
+	color: #c5c5c6;
+}
+section div.sectionBox ul.forum li a.post:hover {
+	color: #f9c922;
+}
+@media only screen and (max-width: 1099px) {		/* MOBILE */
+	section div.sectionBox ul.forum li a.post::before {
+		content: ' ';
+		width: 100%; height: 30px;
+		display: block;
+	}
+}
+section div.sectionBox ul.forum li a.user {
+	background: #ebebeb;
+	font-weight: bold; font-style: italic; font-size: .9em;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+	margin-right: 10px;
+	padding: 2px 8px;
+	float: left;
+}
+section div.sectionBox ul.forum li:hover a.user {
+	background: #fdf497;
+}
+
+/***************************************************************************/
+/* SECTION :: PARTNER ******************************************************/
+
+section ul.partnerList {
+	width: 100%; height: auto;
+	list-style: none;
+}
+section ul.partnerList li {
+	text-align: center;
+	width: 50%; height: auto;
+	float: left;
+}
+section ul.partnerList li img {
+	max-width: 80%;
+	opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+section ul.partnerList li img:hover {
+	max-width: 80%;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+@media all and (max-width: 520px) {
+	section ul.partnerList li {
+		width: 100%;
+	}
+	section ul.partnerList li:nth-child(n+2) {
+		margin-top: 30px;
+	}
+}
+@media all and (min-width: 521px) {
+	section ul.partnerList li:nth-child(n+3) {
+		margin-top: 30px;
+	}
+}
+
+/***************************************************************************/
+/* SECTION :: SHOP *********************************************************/
+
+section div.sectionBox ul.shopMenu {
+	background: rgba(21, 149, 213, 0.1);
+	font-family: UbuntuCondensed; font-size: 1.4em; color: #7995d5;
+	text-align: left;
+	width: 100%; 
+	border-top: 1px dotted #7995d5;
+	border-bottom: 1px dotted #7995d5;
+	margin: 0 0 20px;
+	padding: 5px 0;
+	list-style: none;
+	float: left;
+}
+@media all and (max-width: 700px) {
+	section div.sectionBox div.shopMenuFixed {
+		background: rgba(13, 15, 18, 0.9);
+		width: 100%;
+		position: fixed;
+		bottom: 0; left: 0;
+		z-index: 100;
+	}
+}
+section div.sectionBox ul.shopMenu li {
+	margin: 0 10px;
+	float: left;
+}
+section div.sectionBox ul.shopMenu li.cart {
+	float: right;
+}
+section div.sectionBox ul.shopMenu li a {
+	color: #7995d5;
+}
+section div.sectionBox ul.shopMenu li a span b {
+	font-weight: normal; color: rgba(255, 255, 255, 0.7);
+}
+section div.sectionBox ul.shopMenu li a span strong {
+	font-weight: normal;
+}
+@media all and (max-width: 450px) {
+	section div.sectionBox ul.shopMenu li a span strong {
+		display: none;
+	}
+}
+section div.sectionBox ul.shopMenu li a:hover,
+section div.sectionBox ul.shopMenu li a:hover b {
+	color: #f9c922;
+}
+section div.sectionBox ul.shopMenu li span.ico::before {
+	font-size: .8em;
+	margin-right: 6px;
+}
+section div.sectionBox ul.shopList {
+	width: 100%; height: auto;
+	list-style: none;
+	float: left;
+}
+section div.sectionBox ul.shopList li {
+	height: 320px;
+	padding: 20px;
+	float: left;
+}
+@media all and (max-width: 767px) {
+	section div.sectionBox ul.shopList li {
+		width: 100%;
+	}
+	section div.sectionBox ul.shopList li:nth-last-child() a {
+		padding-bottom: 0;
+	}
+}
+@media all and (min-width: 768px) {
+	section div.sectionBox ul.shopList li {
+		width: 50%;
+	}
+	section div.sectionBox ul.shopList li:nth-last-child(-n+2) a {
+		padding-bottom: 0;
+	}
+}
+section div.sectionBox ul.shopList li a {
+	background-color: #242b36;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	        background-size: cover;
+	width: 100%; height: 280px;
+	padding: 20px;
+	-webkit-transition: all 0.15s ease-in-out 0s;
+	   -moz-transition: all 0.15s ease-in-out 0s;
+	     -o-transition: all 0.15s ease-in-out 0s;
+	        transition: all 0.15s ease-in-out 0s;
+    filter: alpha(opacity=80);
+	opacity: 0.8;
+	float: left;
+}
+section div.sectionBox ul.shopList li a:hover {
+    filter: alpha(opacity=100);
+	opacity: 1;
+}
+@media all and (max-width: 767px) {
+	section div.sectionBox ul.shopList li:nth-last-child() a {
+		padding-bottom: 0;
+	}
+}
+@media all and (min-width: 768px) {
+	section div.sectionBox ul.shopList li:nth-last-child(-n+2) a {
+		padding-bottom: 0;
+	}
+}
+section div.sectionBox ul.shopList li a span.shopInfo {
+	background-color: rgba(204, 0, 0, 0.8);
+	font-family: UbuntuCondensed; color: #fff;
+	width: auto; height: auto;
+	padding: 10px 20px;
+    filter: alpha(opacity=80);
+	opacity: 0.8;
+	overflow: hidden;
+	float: left;
+}
+section div.sectionBox ul.shopList li a:hover span.shopInfo {
+	background-color: rgba(204, 0, 0, 1);
+}
+section div.sectionBox ul.shopList li a span.shopInfo span.shopItem {
+	font-size: 1.5em;
+	line-height: .9em;
+	width: auto; min-height: 39px;
+	float: left;
+}
+section div.sectionBox ul.shopList li a span.shopInfo span.shopItem span.shopItemPrice {
+	font-size: .8em; color: #f9c922;
+}
+section div.sectionBox ul.shopList li a span.shopInfo span.shopItem span.shopItemPrice del {
+	color: rgba(255, 255, 255, 0.6);
+}
+section div.sectionBox a img.shopImg {
+	border: 7px solid rgba(13, 15, 18, 0.5);
+	width: 30%;
+	float: left;
+}
+section div.sectionBox div.shopBuy {
+	width: 65%;
+	float: right;
+}
+section div.sectionBox div.shopBuy img.shopLogo {
+	max-width: 150px; max-height: 50px;
+	margin-bottom: 30px;
+	float: right;
+}
+@media all and (max-width: 700px) {
+	section div.sectionBox a img.shopImg,
+	section div.sectionBox div.shopBuy {
+		width: 100%;
+	}
+	section div.sectionBox div.shopBuy img.shopLogo {
+		display: none;
+	}
+}
+section div.sectionBox div.shopBuy form {
+	width: 100%;
+	float: right;
+}
+section div.sectionBox div.shopBuy form div {
+	width: 60%;
+	float: right;
+}
+section div.sectionBox div.shopBuy form div input[type=number] {
+	font-family: UbuntuCondensed; font-weight: bold; font-size: 2em; color: #0e0f12;
+	text-align: center;
+	line-height: 46px;
+	width: 25%; height: 46px;
+	border: 1px solid #b9b9b9;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	float: left;
+}
+section div.sectionBox div.shopBuy form div input[type=number]::-webkit-outer-spin-button,
+section div.sectionBox div.shopBuy form div input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+section div.sectionBox div.shopBuy form div input[type=number] {
+	-moz-appearance: textfield;
+}
+section div.sectionBox div.shopBuy form div button[type=submit],
+section div.sectionBox div.shopBuy form div button[type=reset],
+section div.sectionBox form button.subscript[type=submit] {
+	background: rgba(21, 149, 213, 0.1);
+	font-family: UbuntuCondensed; font-weight: bold; font-size: 1.6em; color: #7995d5;
+	text-align: center;
+	line-height: 44px;
+	width: 70%; height: 46px;
+	border: 1px dotted #7995d5;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	overflow: hidden;		
+	float: right;
+}
+section div.sectionBox form button.subscript[type=submit] {
+	width: 100%;
+	margin-top: 30px;
+}
+section div.sectionBox div.shopBuy form div button[type=reset] {
+	background: rgba(204, 0, 0, 0.4);
+	color: #f9c922;
+	border: 1px dotted #cc0000;
+}
+section div.sectionBox div.shopBuy form button[type=submit]:hover,
+section div.sectionBox div.shopBuy form button[type=reset]:hover,
+section div.sectionBox form button.subscript[type=submit]:hover {
+	background: rgba(3, 110, 160, 0.4);
+	color: #f9c922;
+	cursor: default;
+}
+section div.sectionBox div.shopBuy form button[type=reset]:hover {
+	background: rgba(204, 0, 0, 0.4);
+}
+section div.sectionBox div.shopBuy form span.shopPrice {
+	font-family: UbuntuCondensed; font-weight: bold; font-style: italic; font-size: 2.8em; color: #f9c922;
+	line-height: 44px;
+	width: 40%;	height: 46px;
+	overflow: hidden;
+	float: left;
+}
+section div.sectionBox div.shopBuy form span.shopPrice del {
+	font-weight: normal; font-size: .8em; color: rgba(255, 255, 255, 0.3);
+}
+@media all and (max-width: 700px) {
+	section div.sectionBox div.shopBuy form div {
+		width: 100%;
+	}	
+	section div.sectionBox div.shopBuy form span.shopPrice {
+		text-align: center;
+		width: 100%;
+		margin: 20px 0;
+	}
+}
+@media all and (min-width: 701px) and (max-width: 1000px) {
+	section div.sectionBox div.shopBuy form span.shopPrice del {
+		display: none;
+	}
+}
+section div.sectionBox div.shopBuy div.shopDesc {
+	font-size: 1.1em;
+	line-height: 150%;
+	text-align: justify;
+	width: 100%;
+	border-top: 1px dotted #f9c922;
+	margin-top: 30px;
+	padding-top: 30px;
+	float: right;
+}
+section div.sectionBox button.login {
+	background: rgba(21, 149, 213, 0.1);
+	font-family: UbuntuCondensed; font-weight: bold; font-size: 1.7em; color: #7995d5;
+	text-align: center;
+	line-height: 34px;
+	width: auto; height: 36px;
+	padding: 0 20px;	
+	margin: 0 10px;
+	border: 1px dotted #7995d5;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+section div.sectionBox button.login:hover {
+	background: rgba(3, 110, 160, 0.4);
+	color: #f9c922;
+}
+section div.sectionBox ul.shopCartList,
+section div.sectionBox ul.shopOrderList {
+	width: 100%;
+	margin: 0 0 20px;
+	padding: 5px 0;
+	list-style: none;
+	float: left;
+}
+section div.sectionBox ul.shopCartList li,
+section div.sectionBox ul.shopOrderList li {
+	line-height: 45px;
+	width: 100%; height: 45px;
+	border-top: 1px dotted rgba(183, 183, 183, 0.5);
+	float: left;
+}
+section div.sectionBox ul.shopCartList li:first-child,
+section div.sectionBox ul.shopCartList li.cartSummary,
+section div.sectionBox ul.shopOrderList li:first-child {
+	border-top: 2px solid rgba(183, 183, 183, 0.5);
+}
+section div.sectionBox ul.shopCartList li:last-child,
+section div.sectionBox ul.shopOrderList li:last-child {
+	border-bottom: 2px solid rgba(183, 183, 183, 0.5);
+}
+section div.sectionBox ul.shopCartList li a.del span.ico {
+	font-size: 1.5em; color: #7995d5;
+	margin: 0 10px;
+	float: left;
+}
+section div.sectionBox ul.shopCartList li a.del:hover span.ico {
+	color: #e74c3c;
+}
+section div.sectionBox ul.shopCartList li span.itemName {
+	font-style: italic; font-size: 1.1em; color: #ffe001;
+	padding-right: 10px;
+	float: left;
+}
+section div.sectionBox ul.shopCartList li span.itemPrice {
+	font-weight: bold; font-style: italic; font-size: 1.2em; color: #ffe001;
+	text-align: center;
+	width: 95px;
+	margin: 0 10px;
+	float: right;
+}
+section div.sectionBox ul.shopCartList li span.cartSummaryInfo {
+	font-weight: bold; font-style: italic; font-size: 1.2em;
+	text-align: right;
+	width: auto;
+	float: right;
+}
+section div.sectionBox ul.shopCartList li input[type=number] {
+	font-family: UbuntuCondensed; font-weight: bold; font-size: 1.5em; color: #0e0f12;
+	text-align: center;
+	line-height: 33px;
+	width: 50px; height: 33px;
+	margin: 6px 0;
+	border: 1px solid #b9b9b9;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	float: right;
+}
+@media all and (max-width: 500px) {
+	section div.sectionBox ul.shopCartList li {
+		overflow: hidden;
+	}
+	section div.sectionBox ul.shopCartList li span.itemName.full {
+		display: none;
+	}
+	section div.sectionBox ul.shopCartList li span.itemName.slim {
+		font-size: 1em;
+		padding-right: 10px;
+	}
+	section div.sectionBox ul.shopCartList li input[type=number] {
+		width: 30px;
+	}
+	section div.sectionBox ul.shopCartList li span.itemPrice {
+		font-size: 1em; 
+		margin: 0;
+	}
+	section div.sectionBox ul.shopCartList li span.cartSummaryInfo {
+		font-size: 1em;
+	}
+}
+@media all and (min-width: 501px) {
+	section div.sectionBox ul.shopCartList li span.itemName.slim {
+		display: none;
+	}
+}
+section div.sectionBox ul.shopCartList li input[type=number]::-webkit-outer-spin-button,
+section div.sectionBox ul.shopCartList li input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+section div.sectionBox ul.shopOrderList li span.status {
+	width: 17px; height: 17px;
+	background: rgba(255, 255, 255, 0.2);
+	border: 1px solid #fff;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	margin: 14px 0 14px 10px;
+	cursor: help;
+	float: left;
+}
+section div.sectionBox ul.shopOrderList li span.status.inLavorazione {
+	background: rgba(255, 224, 1, 0.2);
+	border: 1px solid #ffe001;
+}
+section div.sectionBox ul.shopOrderList li span.status.annullato {
+	background: rgba(231, 76, 60, 0.2);
+	border: 1px solid #e74c3c;
+}
+section div.sectionBox ul.shopOrderList li span.status.spedito {
+	background: rgba(0, 166, 81, 0.2);
+	border: 1px solid #00a651;
+}
+section div.sectionBox ul.shopOrderList li span.date {
+	font-size: 0.9em;
+	text-align: center;
+	width: 120px;
+	margin: 0 10px;
+	float: left;
+}
+section div.sectionBox ul.shopOrderList li span.orderNumber {
+	font-weight: bold; font-size: 1.1em; color: #ffe001;
+	width: auto;
+	float: left;
+}
+section div.sectionBox ul.shopOrderList li span.ico {
+	font-size: 1.7em; color: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	width: 40px;
+	margin: 0 10px;
+	cursor: help;
+	float: right;
+}
+section div.sectionBox ul.shopOrderList li span.ico.active {
+	color: #7995d5;
+}
+section div.sectionBox ul.shopOrderList li a:hover span.ico {
+	color: #e74c3c;
+}
+section div.sectionBox ul.shopOrderList li span.totalPrice {
+	font-style: italic; font-size: 1.1em; color: #ffe001;
+	text-align: right;
+	width: 90px;
+	float: right;
+}
+@media all and (max-width: 450px) {
+	section div.sectionBox ul.shopOrderList li span.totalPrice {
+		display: none;
+	}
+}
+section div.sectionBox div.cartPayment {
+	width: 100%;
+	margin: 0 0 20px;
+	padding: 5px 0;
+	float: left;
+}
+section div.sectionBox div.cartPayment ul.cartPaymentMethod {
+	margin: 0 auto;
+	width: 400px; height: auto;
+	list-style: none;
+	display: table;
+}
+@media all and (max-width: 700px) {
+	section div.sectionBox div.cartPayment ul.cartPaymentMethod {
+		width: 100%;
+	}
+}
+section div.sectionBox div.cartPayment ul.cartPaymentMethod li {
+	width: 50%; height: auto;
+	padding: 15px;
+	float: left;
+}
+section div.sectionBox div.cartPayment ul.cartPaymentMethod li a {
+	color: rgba(255, 255, 255, 0.7);
+	text-align: center;
+	background: -moz-linear-gradient(top, rgba(21,149,213,0.2) 0%, rgba(13,15,18,0.7) 100%);
+	background: -webkit-linear-gradient(top, rgba(21,149,213,0.2) 0%,rgba(13,15,18,0.7) 100%);
+	background: linear-gradient(to bottom, rgba(21,149,213,0.2) 0%,rgba(13,15,18,0.7) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#331595d5', endColorstr='#b30d0f12',GradientType=0 );
+	width: 100%; height: auto;
+	padding: 11px 0;
+	border: 2px solid #1e1f21;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+	overflow: hidden;
+	float: left;
+}
+section div.sectionBox div.cartPayment ul.cartPaymentMethod li a:hover {
+	background: -moz-linear-gradient(top, rgba(183,183,183,0.1) 0%, rgba(13,15,18,0.6) 100%);
+	background: -webkit-linear-gradient(top, rgba(183,183,183,0.1) 0%,rgba(13,15,18,0.6) 100%);
+	background: linear-gradient(to bottom, rgba(183,183,183,0.1) 0%,rgba(13,15,18,0.6) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ab7b7b7', endColorstr='#990d0f12',GradientType=0 );
+}
+section div.sectionBox div.cartPayment ul.cartPaymentMethod li a span.ico:before {
+	font-family: FontAwesome; font-size: 2.5em;
+	line-height: 50px;
+	white-space: pre;
+}
+section div.sectionBox div.cartPayment ul.cartPaymentMethod li a:hover span.ico:before {
+	color: #fff;
+}
+@media all and (max-width: 400px) {
+	section div.sectionBox div.cartPayment ul.cartPaymentMethod li a span i {
+		font-size: 0.85em;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+section div.sectionBox div.PayPalForm {
+	text-align: center;
+	width: 100%; height: auto;
+	float: left;
+}
+section div.sectionBox div.PayPalForm input[type=image] {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	cursor: pointer;
+}
+section div.sectionBox div.PayPalForm input[type=image]:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+/***************************************************************************/
+/* SECTION :: CONTACT ******************************************************/
+
+section form.contactUs label,
+section form.contactUs div.label {
+	line-height: 50px;
+	width: 100%;
+	max-width: 650px; min-height: 50px;
+	margin: 0 auto 10px;
+	display: block;
+}
+section form.contactUs label {
+	text-align: center;
+}
+section form.contactUs label.error {
+	animation-name: vibration;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 5;
+}
+section form.contactUs label span {
+	font-family: UbuntuCondensed; font-weight: normal; font-size: 1.4em;
+	text-align: right;
+	width: 40%;
+	padding-right: 10px;
+	overflow: hidden;
+	float: left;
+}
+section form.contactUs label.error span {
+	color: #cc0000;
+}
+section form.contactUs label input,
+section form.contactUs label textarea,
+section form.contactUs label select {
+	font-family: UbuntuCondensed; font-weight: normal; font-size: 1.3em; color: #0e0f12;
+	line-height: 46px;
+	width: 60%; height: 46px;
+	border: 1px solid #b9b9b9;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 8px 12px;
+}
+section form.contactUs label.error input,
+section form.contactUs label.error textarea,
+section form.contactUs label.error select {
+	border: 1px solid #cc0000;
+}
+@media all and (max-width: 520px) {
+	section form.contactUs label span {
+		font-size: 1.2em;
+		line-height: 30px;
+		height: 30px;
+		padding-right: 0;
+	}
+	section form.contactUs label span,
+	section form.contactUs label input,
+	section form.contactUs label textarea,
+	section form.contactUs label select {
+		width: 100%;
+	}
+}
+section form.contactUs label textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+}
+section form.contactUs input[type=submit] {
+	background: rgba(13, 15, 18, 0.75);
+	font-family: UbuntuCondensed; font-weight: bold; font-size: 1.6em; color: #707070;
+	text-align: center;
+	line-height: 34px;
+	width: 130px; height: 36px;
+	padding: 0;
+	border: 1px solid #0e0f12;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+section form.contactUs input[type=submit]:hover {
+	background: rgba(13, 15, 18, 0.9);
+	color: #f9c922;
+}
+section form.contactUs div.confirm {
+	background: rgba(13, 15, 18, 0.75);
+	font-weight: bold; font-size: 1.4em; color: #a0ce4e;
+	text-align: center;
+	line-height: 34px;
+	width: auto; height: 36px;
+	padding: 0;
+	border: 1px solid #0e0f12;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	display: none;
+}
+section form.contactUs div.confirm.ok {
+	color: #a0ce4e;
+	display: block;
+}
+section form.contactUs div.confirm.error {
+	color: #e74c3c;
+	display: block;
+}
+
+/***************************************************************************/
+/* FOOTER ******************************************************************/
+
+footer {
+	background: #0e0f12;
+	width: 100%; height: auto;
+	padding: 50px 40px 20px;
+	float: left;
+}
+footer div.footerBox {
+	width: 100%; height: auto;
+	margin: 0 auto;
+}
+@media all and (min-width: 1150px) {
+	footer div.footerBox {
+		width: 1100px;
+	}
+}
+footer div.footerBox div.footerContent {
+	font-family: UbuntuCondensed; color: #d7d7d7;
+	width: 100%; height: auto;
+	padding: 0 10px;
+	float: left;
+}
+footer div.footerBox div.footerContent.intro {
+	font-style: italic; color: #959595;
+	padding-right: 30px;
+}
+@media all and (min-width: 600px) {
+	footer div.footerBox div.footerContent {
+		width: 50%;
+	}
+}
+@media all and (max-width: 999px) {
+	footer div.footerBox div.footerContent {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	footer div.footerBox div.footerContent.intro {
+		padding: 0 10px;
+	}
+	footer div.footerBox div.footerContent.social {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 0;
+	}
+}
+@media all and (min-width: 1000px) {
+	footer div.footerBox div.footerContent {
+		width: 33%;
+	}
+	footer div.footerBox div.footerContent.social {
+		width: 34%;
+	}
+}
+footer div.footerBox div.footerContent.end {
+	text-align: center;
+	line-height: 30px;
+	width: 100%; height: auto;
+	margin-bottom: 0;
+}
+@media all and (max-width: 700px) {
+	footer.shop div.footerBox div.footerContent.end {
+		margin-bottom: 60px !important;
+	}
+}
+footer div.footerBox div.footerContent.end span.fCopyright a {
+	color: #d7d7d7;
+}
+footer div.footerBox div.footerContent.end span.fCopyright a:hover {
+	color: #ffe001;
+}
+footer div.footerBox div.footerContent.end span.fCopyright,
+footer div.footerBox div.footerContent.end span.fAciCsai {
+	width: 100%;
+	float: left;
+}
+@media all and (min-width: 700px) {
+	footer div.footerBox div.footerContent.end span.fCopyright {
+		width: auto;
+	}
+	footer div.footerBox div.footerContent.end span.fAciCsai {
+		background: url('./logo_acisport.png') no-repeat right center;
+		width: auto;
+		padding-right: 118px;
+		float: right;
+	}
+} 
+footer div.footerBox div.footerContent h3,
+footer div.footerBox div.footerContent a h3 {
+	font-weight: bold; font-size: 1.4em; color: #d0d0d0; /*color: #cc0000;*/
+	text-transform: uppercase;
+	width: 100%;
+	margin: 0 0 20px; padding: 0;
+}
+footer div.footerBox div.footerContent a:hover h3 {
+	color: #ffe001;
+}
+footer div.footerBox div.footerContent a.tel {
+	color: #d7d7d7;
+	cursor: default;
+}
+footer div.footerBox div.footerContent a.fSocial {
+	background: rgba(255, 255, 255, 0.15);
+	text-align: center;
+	width: 40px; height: 40px;
+	line-height: 40px;
+	margin: 0 6px;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+			border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+}
+footer div.footerBox div.footerContent a.fSocial span {
+	font-family: FontAwesome; font-weight: normal; font-size: 1.5em;
+	width: 40px; height: 40px;
+	float: left;
+}
+footer div.footerBox div.footerContent a.fSocial:hover span.fa-facebook {
+	background: #4267b2;
+}
+footer div.footerBox div.footerContent a.fSocial:hover span.fa-youtube {
+	background: #cc0000;
+}
+footer div.footerBox div.footerContent a.fSocial:hover span.fa-twitch {
+	background: #6441a5;
+}
+footer div.footerBox div.footerContent a.fSocial:hover span.fa-twitter {
+	background: #28a9e2;
+}
+footer div.footerBox div.footerContent a.fSocial:hover span.fa-instagram {
+	background: #d6249f;
+	background: -moz-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6249f', endColorstr='#285AEB',GradientType=1 );
+}
+footer div.footerBox hr {
+	width: 100%;
+	margin: 30px 0;
+	border: none;
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+	float: left;
+}
+
+/***************************************************************************/
+/***************************************************************************/
