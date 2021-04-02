@@ -1,33 +1,46 @@
 <html>
-
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-113923279-1"></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=UA-113923279-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-113923279-1');
+      gtag("config", "UA-113923279-1");
     </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Language" content="ES">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="language" content="ES">
-    <meta name="author" content="iRuby">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="ES" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="language" content="ES" />
+    <meta name="author" content="iRuby" />
 
     <title>Shop » Carrello</title>
 
-    <link rel="icon" href="./style/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="./style/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="./style/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./style/style.css">
-    <link rel="stylesheet" type="text/css" href="./style/YouTubePopUp.css">
-    <link rel="stylesheet" type="text/css" href="./style/carousel.css">
+    <link rel="icon" href="./style/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      href="./style/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="./style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link rel="stylesheet" type="text/css" href="./style/YouTubePopUp.css" />
+    <link rel="stylesheet" type="text/css" href="./style/carousel.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -39,107 +52,124 @@
     <script src="./js/shop_cart.js"></script>
     <script src="./js/sweetalert.min.js"></script>
     <script>
-        $(document).ready(function() {
-            function verifyForm(text, url) {
-                swal({
-                    type: 'success',
-                    title: 'Un\'ultima verifica...',
-                    text: text,
-                    html: true,
-                    showCancelButton: true,
-                    cancelButtonText: 'correggi indirizzo',
-                    showConfirmButton: true,
-                    confirmButtonColor: '#00a651',
-                    confirmButtonText: 'completa l\'acquisto',
-                    allowOutsideClick: true,
-                    closeOnConfirm: false
-                }, function() {
-                    window.location = url;
-                });
+      $(document).ready(function () {
+        function verifyForm(text, url) {
+          swal(
+            {
+              type: "success",
+              title: "Un'ultima verifica...",
+              text: text,
+              html: true,
+              showCancelButton: true,
+              cancelButtonText: "correggi indirizzo",
+              showConfirmButton: true,
+              confirmButtonColor: "#00a651",
+              confirmButtonText: "completa l'acquisto",
+              allowOutsideClick: true,
+              closeOnConfirm: false,
+            },
+            function () {
+              window.location = url;
             }
+          );
+        }
 
-            function errorMessage(text) {
-                swal({
-                    type: 'error',
-                    title: 'ERRORE!',
-                    text: text,
-                    html: true,
-                    showConfirmButton: true,
-                    confirmButtonColor: '#009f4e',
-                    confirmButtonText: 'aggiorna il profilo',
-                    allowOutsideClick: true,
-                    closeOnConfirm: false
-                }, function() {
-                    window.location = 'https://www.timeattackseries.com/shop/profilo.html';
-                });
+        function errorMessage(text) {
+          swal(
+            {
+              type: "error",
+              title: "ERRORE!",
+              text: text,
+              html: true,
+              showConfirmButton: true,
+              confirmButtonColor: "#009f4e",
+              confirmButtonText: "aggiorna il profilo",
+              allowOutsideClick: true,
+              closeOnConfirm: false,
+            },
+            function () {
+              window.location =
+                "https://www.timeattackseries.com/shop/profilo.html";
             }
-            $('a#Payment').click(function() {
-                var linkURL = $(this).attr('href'),
-                    paypalCommissions = '',
-                    paymentType = $(this).text();
-                paymentType = $.trim(paymentType.replace(/[\t\n]+/g, ' '));
+          );
+        }
+        $("a#Payment").click(function () {
+          var linkURL = $(this).attr("href"),
+            paypalCommissions = "",
+            paymentType = $(this).text();
+          paymentType = $.trim(paymentType.replace(/[\t\n]+/g, " "));
 
-                if (paymentType == 'PayPal') {
-                    var totalOrder = $('span.itemPrice.totalOrder').text();
-                    totalOrder = totalOrder.replace('€ ', '');
-                    totalOrder = totalOrder.replace('.', '');
-                    totalOrder = totalOrder.replace(',', '.');
+          if (paymentType == "PayPal") {
+            var totalOrder = $("span.itemPrice.totalOrder").text();
+            totalOrder = totalOrder.replace("€ ", "");
+            totalOrder = totalOrder.replace(".", "");
+            totalOrder = totalOrder.replace(",", ".");
 
-                    // commissione del 4%
-                    paypalCommissions = ((totalOrder * 100) / 96) - totalOrder;
-                    paypalCommissions = paypalCommissions.toFixed(2);
-                    paypalCommissions = '<br /><br /><b style="color: #0070ba;">Commissione PayPal: + € ' + paypalCommissions.replace('.', ',') + '</b>';
-                }
+            // commissione del 4%
+            paypalCommissions = (totalOrder * 100) / 96 - totalOrder;
+            paypalCommissions = paypalCommissions.toFixed(2);
+            paypalCommissions =
+              '<br /><br /><b style="color: #0070ba;">Commissione PayPal: + € ' +
+              paypalCommissions.replace(".", ",") +
+              "</b>";
+          }
 
-                errorMessage("Prima di procedere con l\'invio dell\'ordine, accedi al tuo profilo e compila tutti i dati mancanti...");
+          errorMessage(
+            "Prima di procedere con l'invio dell'ordine, accedi al tuo profilo e compila tutti i dati mancanti..."
+          );
 
-                return false;
-            });
+          return false;
         });
+      });
     </script>
     <style></style>
-</head>
+  </head>
 
-<body class="bgPage">
+  <body class="bgPage">
+    <header>
+      <div id="toggleMenu">
+        <span></span>
+      </div>
+      <div id="logo">
+        <a href="index.html"
+          ><img
+            src="./style/LOGO-DEFINITIVOpngancho_1200x1200.png"
+            alt=""
+            width="250"
+            height="50"
+        /></a>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li>Menu</li>
+          <li>
+            <a href="index.html">
+              <span class="fa-home">Home</span>
+            </a>
+          </li>
 
-	<header>
-		<div id="toggleMenu">
-			<span></span>
-		</div>
-		<div id="logo">
-			<a href="index.html"><img src="./style/LOGO-DEFINITIVOpngancho_1200x1200.png" alt=""width="250" height="50"></a>
-		</div>
-		<nav id="menu">
-			<ul>
-				<li>Menu</li>
-				<li>
-					<a href="index.html">
-						<span class="fa-home">Home</span>
-					</a>
-				</li>
+          <li>
+            <a href="calendario-2021.html">
+              <span class="fa-calendar">CALENDARIO</span>
+            </a>
+          </li>
 
-				<li>
-					<a href="calendario-2021.html">
-						<span class="fa-calendar">CALENDARIO</span>
-					</a>
-				</li>
-
-				<li class="mobileHidden">
-					<a href="inscripciones.html">
-						<span class="fa-pencil">INSCRIPCIONES</span>
-					</a>
-				</li>
-				<li>
-					<a href="clasificacion.html">
-						<span class="fa-trophy">CLASIFICACIÓN</span>
-					</a>
-				</li>
-				<li>
-					<a href="equipos.html">
-						<span class="fa-car">EQUIPOS</span>
-					</a>
-				</li>
-				<!--<li class="mobileHidden">
+          <li class="mobileHidden">
+            <a href="inscripciones.html">
+              <span class="fa-pencil">INSCRIPCIONES</span>
+            </a>
+          </li>
+          <li>
+            <a href="clasificacion.html">
+              <span class="fa-trophy">CLASIFICACIÓN</span>
+            </a>
+          </li>
+          <li>
+            <a href="equipos.html">
+              <span class="fa-car">EQUIPOS</span>
+            </a>
+          </li>
+          <!--<li class="mobileHidden">
 					<a href="./media.php">
 						<span class="fa-camera">Media</span>
 					</a>
@@ -154,12 +184,12 @@
 						<span class="fa-video-camera">Video</span>
 					</a>
 				</li>-->
-				<li>
-					<a href="reglamento.html">
-						<span class="fa-file-text-o">REGLAMENTO</span>
-					</a>
-				</li>
-				<!--<li class="hideLinks">
+          <li>
+            <a href="reglamento.html">
+              <span class="fa-file-text-o">REGLAMENTO</span>
+            </a>
+          </li>
+          <!--<li class="hideLinks">
 					<a href="">
 						<span class="fa-handshake-o">Partner</span>
 					</a>
@@ -169,139 +199,191 @@
 						<span class="fa-phone">Contatti</span>
 					</a>
 				</li>-->
+        </ul>
+      </nav>
+    </header>
 
-			</ul>
-		</nav>
-
-
-	</header>
-
-    <div id="loader-wrapper" style="display: none;">
-        <div id="loader"></div>
+    <div id="loader-wrapper" style="display: none">
+      <div id="loader"></div>
     </div>
     <main>
-        <section>
-            <div class="sectionBox">
-                <h1 class="sectionTitle">CONTENUTO <b>CARRELLO</b></h1>
-                <div class="shopMenuFixed">
-                    <ul class="shopMenu">
-                        <li>
-                            <a href="https://www.timeattackseries.com/shop/accedi.html">
-                                <span class="ico fa-sign-in">Accedi</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.timeattackseries.com/shop/registrazione.html">
-                                <span class="ico fa-user-plus">Registrati</span>
-                            </a>
-                        </li>
-                        <li class="cart">
-                            <a href="https://www.timeattackseries.com/shop/carrello.html">
-                                <span class="ico fa-shopping-cart"><b>3</b> <strong>articoli</strong></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="shopCartList">
-                    <li>
-                        <a class="del" href="https://www.timeattackseries.com/shop/0_cancella.html" title="Rimuovi articolo dal carrello">
-                            <span class="ico fa-trash-o"></span>
-                        </a>
-                        <span class="itemName full">Iscrizione EXTREME - Misano 1</span>
-                        <span class="itemName slim">Iscrizione EXTREME - Misano 1</span>
-                        <span class="itemPrice" id="destID0">€ 516,00</span>
-                        <input class="quantity" type="number" name="itemQuantity" min="1" value="1" amount="516" destination="destID0">
-                    </li>
-                    <li>
-                        <a class="del" href="https://www.timeattackseries.com/shop/1_cancella.html" title="Rimuovi articolo dal carrello">
-                            <span class="ico fa-trash-o"></span>
-                        </a>
-                        <span class="itemName full">Iscrizione PRO - Franciacorta</span>
-                        <span class="itemName slim">Iscrizione PRO - Franciacorta</span>
-                        <span class="itemPrice" id="destID1">€ 468,00</span>
-                        <input class="quantity" type="number" name="itemQuantity" min="1" value="1" amount="468" destination="destID1">
-                    </li>
-                    <li>
-                        <a class="del" href="https://www.timeattackseries.com/shop/2_cancella.html" title="Rimuovi articolo dal carrello">
-                            <span class="ico fa-trash-o"></span>
-                        </a>
-                        <span class="itemName full">Iscrizione STREET - Monza</span>
-                        <span class="itemName slim">Iscrizione STREET - Monza</span>
-                        <span class="itemPrice" id="destID2">€ 468,00</span>
-                        <input class="quantity" type="number" name="itemQuantity" min="1" value="1" amount="468" destination="destID2">
-                    </li>
-                    <li class="cartSummary">
-                        <span class="itemPrice total">€ 1.452,00</span>
-                        <span class="cartSummaryInfo">Totale prodotti &nbsp;</span>
-                    </li>
-                    <li class="cartSummary transport">
-                        <span class="itemPrice">€ 0,00</span>
-                        <input type="hidden" id="shippingCost" value="0">
-                        <span class="cartSummaryInfo">Spedizione &nbsp;</span>
-                    </li>
-                    <li class="cartSummary">
-                        <span class="itemPrice totalOrder">€ 1.452,00</span>
-                        <span class="cartSummaryInfo">Totale ordine &nbsp;</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <section>
+        <div class="sectionBox">
+          <h1 class="sectionTitle">CONTENUTO <b>CARRELLO</b></h1>
+          <div class="shopMenuFixed">
+            <ul class="shopMenu">
+              <li>
+                <a href="https://www.timeattackseries.com/shop/accedi.html">
+                  <span class="ico fa-sign-in">Accedi</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.timeattackseries.com/shop/registrazione.html"
+                >
+                  <span class="ico fa-user-plus">Registrati</span>
+                </a>
+              </li>
+              <li class="cart">
+                <a href="https://www.timeattackseries.com/shop/carrello.html">
+                  <span class="ico fa-shopping-cart"
+                    ><b>3</b> <strong>articoli</strong></span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="shopCartList">
+            <li>
+              <a
+                class="del"
+                href="https://www.timeattackseries.com/shop/0_cancella.html"
+                title="Rimuovi articolo dal carrello"
+              >
+                <span class="ico fa-trash-o"></span>
+              </a>
+              <span class="itemName full">Iscrizione EXTREME - Misano 1</span>
+              <span class="itemName slim">Iscrizione EXTREME - Misano 1</span>
+              <span class="itemPrice" id="destID0">€ 516,00</span>
+              <input
+                class="quantity"
+                type="number"
+                name="itemQuantity"
+                min="1"
+                value="1"
+                amount="516"
+                destination="destID0"
+              />
+            </li>
+            <li>
+              <a
+                class="del"
+                href="https://www.timeattackseries.com/shop/1_cancella.html"
+                title="Rimuovi articolo dal carrello"
+              >
+                <span class="ico fa-trash-o"></span>
+              </a>
+              <span class="itemName full">Iscrizione PRO - Franciacorta</span>
+              <span class="itemName slim">Iscrizione PRO - Franciacorta</span>
+              <span class="itemPrice" id="destID1">€ 468,00</span>
+              <input
+                class="quantity"
+                type="number"
+                name="itemQuantity"
+                min="1"
+                value="1"
+                amount="468"
+                destination="destID1"
+              />
+            </li>
+            <li>
+              <a
+                class="del"
+                href="https://www.timeattackseries.com/shop/2_cancella.html"
+                title="Rimuovi articolo dal carrello"
+              >
+                <span class="ico fa-trash-o"></span>
+              </a>
+              <span class="itemName full">Iscrizione STREET - Monza</span>
+              <span class="itemName slim">Iscrizione STREET - Monza</span>
+              <span class="itemPrice" id="destID2">€ 468,00</span>
+              <input
+                class="quantity"
+                type="number"
+                name="itemQuantity"
+                min="1"
+                value="1"
+                amount="468"
+                destination="destID2"
+              />
+            </li>
+            <li class="cartSummary">
+              <span class="itemPrice total">€ 1.452,00</span>
+              <span class="cartSummaryInfo">Totale prodotti &nbsp;</span>
+            </li>
+            <li class="cartSummary transport">
+              <span class="itemPrice">€ 0,00</span>
+              <input type="hidden" id="shippingCost" value="0" />
+              <span class="cartSummaryInfo">Spedizione &nbsp;</span>
+            </li>
+            <li class="cartSummary">
+              <span class="itemPrice totalOrder">€ 1.452,00</span>
+              <span class="cartSummaryInfo">Totale ordine &nbsp;</span>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-
-
-<footer>
-    <div class="footerBox">
+    <footer>
+      <div class="footerBox">
         <div class="footerContent intro">
-            Il Time Attack nasce in Giappone come fenomeno che unisce la passione per i motori alla rincorsa del
-            giro più veloce.
-            <br>
-            Condividendone lo spirito, abbiamo deciso di portarlo anche in Italia, consentendo a tutti gli
-            appassionati di potersi confrontare con ogni tipo di auto, rendendo le loro giornate in pista uniche ed
-            indimenticabili...
+          Il Time Attack nasce in Giappone come fenomeno che unisce la passione
+          per i motori alla rincorsa del giro più veloce.
+          <br />
+          Condividendone lo spirito, abbiamo deciso di portarlo anche in Italia,
+          consentendo a tutti gli appassionati di potersi confrontare con ogni
+          tipo di auto, rendendo le loro giornate in pista uniche ed
+          indimenticabili...
         </div>
         <div class="footerContent">
-            <a href="contactanos.html">
-                <h3>CONTACTANOS</h3>
-            </a>
-            WD AUTOMOTIVE di Andrea Scorrano
-            <br>
-            P.ta IVA 03347010161
-            <br><br>
-            <a href="mailto:hola@dalezapatilla.com">hola@dalezapatilla.com</a>
+          <a href="contactanos.html">
+            <h3>CONTACTANOS</h3>
+          </a>
+          WD AUTOMOTIVE di Andrea Scorrano
+          <br />
+          P.ta IVA 03347010161
+          <br /><br />
+          <a href="mailto:hola@dalezapatilla.com">hola@dalezapatilla.com</a>
         </div>
         <script>
-            $(function() {
-                $('.email').each(function(i) {
-                    var mail = $(this).html();
-                    mail = mail.replace(" [at] ", "@");
-                    mail = mail.replace(" [dot] ", ".");
+          $(function () {
+            $(".email").each(function (i) {
+              var mail = $(this).html();
+              mail = mail.replace(" [at] ", "@");
+              mail = mail.replace(" [dot] ", ".");
 
-                    $(this).html(mail).replaceWith('<a href="mailto:' + $(this).text() + '">' + $(this)
-                        .text() + '</a>');
-                });
+              $(this)
+                .html(mail)
+                .replaceWith(
+                  '<a href="mailto:' +
+                    $(this).text() +
+                    '">' +
+                    $(this).text() +
+                    "</a>"
+                );
             });
+          });
         </script>
         <div class="footerContent social">
-            <h3>REDES SOCIALES</h3>
-        <!-- <a class="fSocial" target="_blank" href="">
+          <h3>REDES SOCIALES</h3>
+          <!-- <a class="fSocial" target="_blank" href="">
                 <span class="fa-facebook"></span>
             </a>-->
-            <a class="fSocial" target="_blank" href="https://www.youtube.com/channel/UC48u8o3hOGklAiGDgP3bD0g">
-                <span class="fa-youtube"></span>
-            </a>
-            <a class="fSocial" target="_blank" href="https://www.twitch.tv/elgarajedehache">
-                <span class="fa-twitch"></span>
-            </a>
-            <a class="fSocial" target="_blank" href="https://www.instagram.com/dale.zapatilla/">
-                <span class="fa-instagram"></span>
-            </a>
+          <a
+            class="fSocial"
+            target="_blank"
+            href="https://www.youtube.com/channel/UC48u8o3hOGklAiGDgP3bD0g"
+          >
+            <span class="fa-youtube"></span>
+          </a>
+          <a
+            class="fSocial"
+            target="_blank"
+            href="https://www.twitch.tv/elgarajedehache"
+          >
+            <span class="fa-twitch"></span>
+          </a>
+          <a
+            class="fSocial"
+            target="_blank"
+            href="https://www.instagram.com/dale.zapatilla/"
+          >
+            <span class="fa-instagram"></span>
+          </a>
         </div>
-    </div>
-</footer>
-
-
-</body>
-<app-content ng-version="11.1.0"></app-content>
-
+      </div>
+    </footer>
+  </body>
+  <app-content ng-version="11.1.0"></app-content>
 </html>
