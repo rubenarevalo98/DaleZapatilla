@@ -67,7 +67,79 @@
 
 <body class="bgPage">
 
-    <?php require './header.php' ?>
+	<header>
+		<div id="toggleMenu">
+			<span></span>
+		</div>
+		<div id="logo">
+			<a href="index.html"><img src="./style/LOGO-DEFINITIVOpngancho_1200x1200.png" alt=""width="250" height="50"></a>
+		</div>
+		<nav id="menu">
+			<ul>
+				<li>Menu</li>
+				<li>
+					<a href="index.html">
+						<span class="fa-home">Home</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="calendario-2021.html">
+						<span class="fa-calendar">CALENDARIO</span>
+					</a>
+				</li>
+
+				<li class="mobileHidden">
+					<a href="inscripciones.html">
+						<span class="fa-pencil">INSCRIPCIONES</span>
+					</a>
+				</li>
+				<li>
+					<a href="clasificacion.html">
+						<span class="fa-trophy">CLASIFICACIÓN</span>
+					</a>
+				</li>
+				<li>
+					<a href="equipos.html">
+						<span class="fa-car">EQUIPOS</span>
+					</a>
+				</li>
+				<!--<li class="mobileHidden">
+					<a href="./media.php">
+						<span class="fa-camera">Media</span>
+					</a>
+				</li>
+				<li class="desktopHidden">
+					<a href="">
+						<span class="fa-camera">Foto</span>
+					</a>
+				</li>
+				<li class="desktopHidden">
+					<a href="">
+						<span class="fa-video-camera">Video</span>
+					</a>
+				</li>-->
+				<li>
+					<a href="reglamento.html">
+						<span class="fa-file-text-o">REGLAMENTO</span>
+					</a>
+				</li>
+				<!--<li class="hideLinks">
+					<a href="">
+						<span class="fa-handshake-o">Partner</span>
+					</a>
+				</li>
+				<li class="hideLinks">
+					<a href="">
+						<span class="fa-phone">Contatti</span>
+					</a>
+				</li>-->
+
+			</ul>
+		</nav>
+
+
+	</header>
 
     <div id="loader-wrapper" style="display: none;">
         <div id="loader"></div>
@@ -102,7 +174,56 @@
         </section>
     </main>
 
-    <?php require './footer.php' ?>
+
+<footer>
+    <div class="footerBox">
+        <div class="footerContent intro">
+            Il Time Attack nasce in Giappone come fenomeno che unisce la passione per i motori alla rincorsa del
+            giro più veloce.
+            <br>
+            Condividendone lo spirito, abbiamo deciso di portarlo anche in Italia, consentendo a tutti gli
+            appassionati di potersi confrontare con ogni tipo di auto, rendendo le loro giornate in pista uniche ed
+            indimenticabili...
+        </div>
+        <div class="footerContent">
+            <a href="contactanos.html">
+                <h3>CONTACTANOS</h3>
+            </a>
+            WD AUTOMOTIVE di Andrea Scorrano
+            <br>
+            P.ta IVA 03347010161
+            <br><br>
+            <a href="mailto:hola@dalezapatilla.com">hola@dalezapatilla.com</a>
+        </div>
+        <script>
+            $(function() {
+                $('.email').each(function(i) {
+                    var mail = $(this).html();
+                    mail = mail.replace(" [at] ", "@");
+                    mail = mail.replace(" [dot] ", ".");
+
+                    $(this).html(mail).replaceWith('<a href="mailto:' + $(this).text() + '">' + $(this)
+                        .text() + '</a>');
+                });
+            });
+        </script>
+        <div class="footerContent social">
+            <h3>REDES SOCIALES</h3>
+        <!-- <a class="fSocial" target="_blank" href="">
+                <span class="fa-facebook"></span>
+            </a>-->
+            <a class="fSocial" target="_blank" href="https://www.youtube.com/channel/UC48u8o3hOGklAiGDgP3bD0g">
+                <span class="fa-youtube"></span>
+            </a>
+            <a class="fSocial" target="_blank" href="https://www.twitch.tv/elgarajedehache">
+                <span class="fa-twitch"></span>
+            </a>
+            <a class="fSocial" target="_blank" href="https://www.instagram.com/dale.zapatilla/">
+                <span class="fa-instagram"></span>
+            </a>
+        </div>
+    </div>
+</footer>
 
 </body>
 <app-content ng-version="11.1.0"></app-content>
