@@ -2027,7 +2027,7 @@ section div.sectionBox ul.calendarList li a.calendarEvent:hover {
 	color: #f9c922;
 }
 section div.sectionBox ul.calendarList li img {
-	height: 60px;
+	height: 65px;
 	margin: 10px 0;
     filter: alpha(opacity=70);
 	opacity: 0.7;
