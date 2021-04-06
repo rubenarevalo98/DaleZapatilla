@@ -803,9 +803,8 @@ section.nextEvent .eventLayout.Imola div a {
 	left: 60px;
 }
 section.nextEvent .eventLayout.Misano div a {
-	bottom: 0;
-	bottom: 102;
-	/*right: 20px;*/
+	bottom: 100;
+	right: 100px;
 }
 section.nextEvent .eventLayout.Monza div a {
 	bottom: 100px; 
