@@ -670,7 +670,7 @@ section.nextEvent .countdownEvent .countdown-container {
 }
 section.nextEvent .countdownEvent .countdown-container .clock-item {
 	font-family: AntiqueOlive; font-weight: bold; font-size: 1.3em;
-	width: 25%; height: 150px;
+	width: 25%; height: 20%;
 	padding: 10px 10px 0;
 	float: left;
 }
