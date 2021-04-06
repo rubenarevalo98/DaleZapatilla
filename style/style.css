@@ -2070,7 +2070,7 @@ section div.sectionBox ul.calendarList li div.calendarDate span.calendarMonth {
 	text-transform: uppercase;
 	background: rgba(204, 0, 0, 0.6);
 	line-height: 20px;
-	width: 50px; height: 20px;
+	width: 60px; height: 20px;
 	border-bottom: 1px solid rgba(235, 235, 235, 0.6);
 	-webkit-border-top-left-radius: 3px;
 	    -moz-border-radius-topleft: 3px;
@@ -2087,7 +2087,7 @@ section div.sectionBox ul.calendarList li div.calendarDate span.calendarDay {
 	background: rgba(204, 0, 0, 0.6);
 	font-size: 2em;
 	line-height: 30px;
-	width: 50px; height: 30px;
+	width: 60px; height: 30px;
 	float: left;
 }
 section div.sectionBox ul.calendarList li:hover div.calendarDate span.calendarDay {
@@ -2095,7 +2095,7 @@ section div.sectionBox ul.calendarList li:hover div.calendarDate span.calendarDa
 }
 section div.sectionBox ul.calendarList li div.calendarDate span.calendarRibbon {
 	width: 0; height: 0;
-	border-width: 5px 25px;
+	border-width: 5px 30px;
 	border-style: solid;
 	border-color: rgba(204, 0, 0, 0.6) rgba(204, 0, 0, 0.6) transparent rgba(204, 0, 0, 0.6);
 	float: left;
