@@ -750,6 +750,7 @@ section.nextEvent .eventLayout div {
 	section.nextEvent .eventLayout {
 		height: auto;
 		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 	section.nextEvent .eventLayout a.eventName {
 		font-family: AntiqueOlive; font-size: 8vw;
