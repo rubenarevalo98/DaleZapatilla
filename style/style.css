@@ -1468,13 +1468,14 @@ section div.regulationBox {
 	}
 }
 section div.regulationBox h1 {
-	font-family: UbuntuCondensed; font-size: 2.5em;
-	text-align: center;
-	width: 100%;
-	margin: 0; padding: 0 0 20px;
+    font-family: UbuntuCondensed;
+    font-size: 3.5em;
+    border-bottom: 2px solid #ffff00;
+    text-align: center;
+    padding: 10px 10px -10px;
 }
 section div.regulationBox h1 b {
-	color: #cc0000;
+	color: #ffff00;
 }
 section div.regulationBox h2,
 section div.regulationBox h3,
