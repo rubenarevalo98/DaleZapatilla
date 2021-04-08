@@ -3021,13 +3021,13 @@ footer div.footerBox hr {
 /* VIDEO DE YOUTUBE */
 /***************************************************************************/
 
-.div_contendor {
+.video-wrapper {
 	position: relative;
 	padding-bottom: 56.25%; /*panorámico*/
 	padding-top: 25px;
 	height: 0;
 }
-.div_contenedor iframe {
+.video-wrapper iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
