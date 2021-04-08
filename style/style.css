@@ -2147,12 +2147,6 @@ section div.sectionBox ul.eventInfo li h2 {
 	margin: 0; padding: 12px 0 0;
 	float: left;
 }
-section div.sectionBox ul.eventInfo li h3 {
-	font-family: UbuntuCondensed; font-style: italic; font-size: 1em; color: white;
-	width: auto; height: auto;
-	margin: 0; padding: 12px 0 0;
-	float: left;
-}
 section div.sectionBox ul.eventInfo li span {
 	font-family: UbuntuCondensed; font-size: 1.3em;	color: #c5c5c6;
 	width: auto;
