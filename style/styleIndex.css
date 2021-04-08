@@ -430,7 +430,7 @@ header div#logo {
 		text-align: center;
 		width: 100%; height: 45px;
 		margin: 0;
-		border-bottom: 2px solid #ffff00 ;
+		border-bottom: 2px solid  #F9AF2E ;
 		list-style: none;
 		float: left;
 	}
@@ -902,7 +902,7 @@ ul#newsList li:nth-child(even) div:first-child {
 }
 ul#newsList li div h1 {
 	font-size: 1.6em;
-	border-bottom: 2px solid #ffff00 ;
+	border-bottom: 2px solid  #F9AF2E ;
 	padding: 10px 10px 20px;
 }
 @media all and (max-width: 1170px) and (min-width: 1000px) {
@@ -1176,7 +1176,7 @@ section div.sectionBox {
 }
 section div.sectionBox h1.sectionTitle {
 	font-family: UbuntuCondensed; font-size: 3.5em;
-	border-bottom: 2px solid #ffff00;
+	border-bottom: 2px solid  #F9AF2E;
 	text-align: center;
     padding: 10px 10px -10px;
 }
@@ -1194,7 +1194,7 @@ section div.sectionBox h1.sectionTitle.shop {
 	}
 }
 section div.sectionBox h1.sectionTitle b {
-	color: #ffff00 ;
+	color:  #F9AF2E ;
 }
 
 
@@ -1220,7 +1220,7 @@ section div.sectionBox h2.sectionTitle.shop {
 	}
 }
 section div.sectionBox h2.sectionTitle b {
-	color: #ffff00 ;
+	color:  #F9AF2E ;
 }
 
 
