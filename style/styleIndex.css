@@ -827,7 +827,6 @@ section.nextEvent .eventLayout a:hover {
 
 ul#newsList {
 	width: 100%; height: auto;
-	margin-top: 40px;
 	list-style: none;
 	float: left;
 	margin-top: 80px;
