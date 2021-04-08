@@ -830,6 +830,8 @@ ul#newsList {
 	margin-top: 40px;
 	list-style: none;
 	float: left;
+	margin-top: 80px;
+    margin-bottom: 100px;
 }
 @media all and (max-width: 999px) {
 	ul#newsList {
