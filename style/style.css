@@ -2899,7 +2899,6 @@ footer div.footerBox div.footerContent {
 footer div.footerBox div.footerContent.intro {
 	font-style: italic; color: #959595;
 	padding-right: 30px;
-	margin-left: 10%;
 }
 @media all and (min-width: 600px) {
 	footer div.footerBox div.footerContent {
@@ -2922,17 +2921,11 @@ footer div.footerBox div.footerContent.intro {
 }
 @media all and (min-width: 1000px) {
 	footer div.footerBox div.footerContent {
-		width: 35%;
+		width: 33%;
 	}
 	footer div.footerBox div.footerContent.social {
-		width: 35%;
+		width: 34%;
 	}
-}
-footer div.footerBox div.footerContent.end {
-	text-align: center;
-	line-height: 30px;
-	width: 100%; height: auto;
-	margin-bottom: 0;
 }
 footer div.footerBox div.footerContent.end {
 	text-align: center;
