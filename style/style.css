@@ -2899,6 +2899,7 @@ footer div.footerBox div.footerContent {
 footer div.footerBox div.footerContent.intro {
 	font-style: italic; color: #959595;
 	padding-right: 30px;
+	margin-left: 10%;
 }
 @media all and (min-width: 600px) {
 	footer div.footerBox div.footerContent {
@@ -2921,7 +2922,7 @@ footer div.footerBox div.footerContent.intro {
 }
 @media all and (min-width: 1000px) {
 	footer div.footerBox div.footerContent {
-		width: 33%;
+		width: 20%;
 	}
 	footer div.footerBox div.footerContent.social {
 		width: 34%;
