@@ -2921,10 +2921,10 @@ footer div.footerBox div.footerContent.intro {
 }
 @media all and (min-width: 1000px) {
 	footer div.footerBox div.footerContent {
-		width: 35%;
+		width: 33%;
 	}
 	footer div.footerBox div.footerContent.social {
-		width: 35%;
+		width: 34%;
 	}
 }
 footer div.footerBox div.footerContent.end {
