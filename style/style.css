@@ -2923,6 +2923,9 @@ footer div.footerBox div.footerContent.intro {
 	footer div.footerBox div.footerContent {
 		width: 30%;
 	}
+	footer div.footerBox div.footerContent.contact {
+		width: 30%;
+	}
 	footer div.footerBox div.footerContent.social {
 		width: 20%;
 	}
