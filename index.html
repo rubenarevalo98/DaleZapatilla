@@ -62,6 +62,10 @@
 		<link rel="apple-touch-icon" href="./style/Logos/favicon.png"
 			type="image/x-icon" />
 
+		<link rel="icon" href="./style/Logos/favicon.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="./style/Logos/favicon.png"
+			type="image/x-icon" />
+
 		<link rel="stylesheet" type="text/css" href="./style/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="./style/styleIndex.css">
 		<link rel="stylesheet" type="text/css" href="./style/YouTubePopUp.css">
@@ -320,8 +324,6 @@
 							</div>
 						</div>
 
-
-
 						<div class="wrapper">
 							<ul id="newsList">
 								<li>
@@ -346,9 +348,6 @@
 				</section>
 			</main>
 
-
-
-
 			<footer>
 				<div class="footerBox">
 					<div class="footerContent intro">
@@ -369,24 +368,24 @@
 						<a href="mailto:hola@dalezapatilla.com">hola@dalezapatilla.com</a>
 					</div>
 					<script>
-			$(function () {
-			  $(".email").each(function (i) {
-				var mail = $(this).html();
-				mail = mail.replace(" [at] ", "@");
-				mail = mail.replace(" [dot] ", ".");
-	
-				$(this)
-				  .html(mail)
-				  .replaceWith(
-					'<a href="mailto:' +
-					$(this).text() +
-					'">' +
-					$(this).text() +
-					"</a>"
-				  );
-			  });
-			});
-		  </script>
+					$(function () {
+					$(".email").each(function (i) {
+						var mail = $(this).html();
+						mail = mail.replace(" [at] ", "@");
+						mail = mail.replace(" [dot] ", ".");
+			
+						$(this)
+						.html(mail)
+						.replaceWith(
+							'<a href="mailto:' +
+							$(this).text() +
+							'">' +
+							$(this).text() +
+							"</a>"
+							);
+						});
+					});
+		  			</script>
 					<div class="footerContent social">
 						<h3>REDES SOCIALES</h3>
 
