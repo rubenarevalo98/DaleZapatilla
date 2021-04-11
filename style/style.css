@@ -970,7 +970,7 @@ section.media {
 	padding: 40px 25px 0;
 }
 section ul#mediaList {
-	height: auto;
+	height: 100%;
 	margin-bottom: 30px;
 	list-style: none;
 	float: left;
