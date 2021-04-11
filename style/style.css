@@ -1020,7 +1020,7 @@ section ul#mediaList li a {
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	        background-size: cover;
-	width: 100%; height: 665px;
+	width: 100%; height: 280px;
 	padding: 20px;
 	-webkit-transition: all 0.15s ease-in-out 0s;
 	   -moz-transition: all 0.15s ease-in-out 0s;
@@ -1357,7 +1357,6 @@ section div.sectionBox ul.mediaList li {
 @media all and (min-width: 768px) {
 	section div.sectionBox ul.mediaList li {
 		width: 50%;
-		height: 680px;
 	}
 	section div.sectionBox ul.mediaList li:nth-last-child(-n+2) a {
 		padding-bottom: 0;
