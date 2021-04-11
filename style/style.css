@@ -1357,6 +1357,7 @@ section div.sectionBox ul.mediaList li {
 @media all and (min-width: 768px) {
 	section div.sectionBox ul.mediaList li {
 		width: 50%;
+		height: 680px;
 	}
 	section div.sectionBox ul.mediaList li:nth-last-child(-n+2) a {
 		padding-bottom: 0;
