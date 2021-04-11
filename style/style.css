@@ -970,13 +970,13 @@ section.media {
 	padding: 40px 25px 0;
 }
 section ul#mediaList {
-	height: 100%;
+	height: auto;
 	margin-bottom: 30px;
 	list-style: none;
 	float: left;
 }
 section ul#mediaList li {
-	height: 100%;
+	height: 320px;
 	padding: 20px;
 	float: left;
 }
@@ -1020,7 +1020,7 @@ section ul#mediaList li a {
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	        background-size: cover;
-	width: 100%; height: 280px;
+	width: 100%; height: 665px;
 	padding: 20px;
 	-webkit-transition: all 0.15s ease-in-out 0s;
 	   -moz-transition: all 0.15s ease-in-out 0s;
