@@ -976,7 +976,7 @@ section ul#mediaList {
 	float: left;
 }
 section ul#mediaList li {
-	height: 320px;
+	height: 100%;
 	padding: 20px;
 	float: left;
 }
