@@ -2921,7 +2921,7 @@ footer div.footerBox div.footerContent.intro {
 }
 @media all and (min-width: 1000px) {
 	footer div.footerBox div.footerContent {
-		width: 30%;
+		width: 50%;
 	}
 	footer div.footerBox div.footerContent.contact {
 		width: 30%;
