@@ -2120,6 +2120,12 @@ section div.sectionBox ul.eventInfo li {
 	border-bottom: 1px dotted #707070;
 	float: right;
 }
+section div.sectionBox ul.eventInfo li_1 {
+	width: 60%; height: auto;
+	margin: 0 0 20px; padding: 0 8px 3px;
+	border-bottom: 1px dotted #707070;
+	float: center;
+}
 section div.sectionBox ul.eventInfo li:first-child {
 	width: 40%; height: auto;
 	margin: 0; padding: 0;
