@@ -3054,3 +3054,25 @@ footer div.footerBox hr {
 	width: 100%;
 	height: 100%;
 }
+
+
+ul#standingList a{
+    background: rgba(21, 149, 213, 0.1);
+    font-family: UbuntuCondensed;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #7995d5;
+    text-align: center;
+    line-height: 44px;
+    width: 70%;
+    height: 46px;
+    border: 1px dotted #7995d5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: right;
+}
